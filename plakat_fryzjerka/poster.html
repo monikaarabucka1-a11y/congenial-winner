@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@400;500;600;700&family=Great+Vibes&display=block&subset=latin-ext" rel="stylesheet">
+<style>
+:root{--gold1:#f6dcae;--gold2:#c9955a;--gold3:#8a5a2e;--gold:#d8ad74}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;background:#0b0907;overflow:hidden}
+.poster{position:relative;width:1080px;height:1080px;overflow:hidden;
+  background:
+   radial-gradient(ellipse 620px 520px at 22% 38%, rgba(120,80,40,.28), transparent 70%),
+   radial-gradient(ellipse 700px 600px at 85% 30%, rgba(90,60,30,.22), transparent 70%),
+   linear-gradient(160deg,#16110c 0%,#0b0907 55%,#060504 100%);
+  font-family:Montserrat,sans-serif;color:#efe6da}
+.dust{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,215,160,.9),rgba(255,200,140,0) 70%)}
+.spark{position:absolute;color:var(--gold1);font-size:22px;text-shadow:0 0 10px rgba(255,210,150,.9)}
+.goldtext{background:linear-gradient(180deg,var(--gold1) 0%,#e2b77e 40%,var(--gold2) 62%,#f0cf98 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+
+.logo{position:absolute;left:58px;top:52px;width:440px}
+.logo img{width:100%;display:block}
+
+.left{position:absolute;left:70px;top:222px;width:540px}
+.kicker{font-size:17px;font-weight:600;letter-spacing:.32em;color:var(--gold)}
+.title{font-family:'Playfair Display',serif;font-weight:800;font-size:90px;line-height:1;margin-top:28px;letter-spacing:.01em;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.6))}
+.script{font-family:'Great Vibes',cursive;font-size:96px;line-height:1;color:#fbf3e6;margin:4px 0 0 6px;
+  text-shadow:0 0 18px rgba(255,210,150,.25)}
+.divider{display:flex;align-items:center;gap:14px;margin:26px 0 26px;width:470px}
+.divider span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.divider i{color:var(--gold1);font-style:normal;font-size:16px}
+ul{list-style:none}
+li{display:flex;align-items:center;gap:16px;font-size:19px;font-weight:500;letter-spacing:.06em;margin-bottom:21px;color:#efe6da;text-transform:uppercase}
+li b{flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;color:var(--gold1);font-size:15px;
+  box-shadow:0 0 10px rgba(216,173,116,.25)}
+
+.arch{position:absolute;right:62px;top:62px;width:392px;height:710px;border-radius:196px 196px 14px 14px;padding:7px;
+  background:linear-gradient(180deg,var(--gold1),var(--gold2) 45%,var(--gold3) 80%,var(--gold1));
+  box-shadow:0 0 40px rgba(216,160,100,.28),0 20px 50px rgba(0,0,0,.7)}
+.arch .inner{width:100%;height:100%;border-radius:190px 190px 9px 9px;overflow:hidden;position:relative}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:39% 50%;display:block;filter:contrast(1.04) saturate(.95)}
+.arch .inner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,8,6,.55))}
+.arch2{position:absolute;right:28px;top:28px;width:460px;height:778px;border-radius:230px 230px 20px 20px;border:1px solid rgba(216,173,116,.45)}
+
+.hair{position:absolute;right:22px;top:600px;width:210px;height:210px;border-radius:50%;padding:6px;
+  background:linear-gradient(135deg,var(--gold1),var(--gold2) 50%,var(--gold3));
+  box-shadow:0 0 30px rgba(216,160,100,.35),0 14px 40px rgba(0,0,0,.75)}
+.hair img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+
+.contact{position:absolute;left:62px;right:62px;bottom:52px;height:150px;border-radius:18px;padding:3px;
+  background:linear-gradient(90deg,var(--gold3),var(--gold1) 30%,var(--gold2) 70%,var(--gold3))}
+.contact .in{width:100%;height:100%;border-radius:15px;background:linear-gradient(180deg,#17120d,#0d0a08);display:flex;align-items:center;padding:0 46px}
+.contact .addr{flex:1}
+.contact .name{font-family:'Playfair Display',serif;font-weight:700;font-size:34px;letter-spacing:.02em}
+.contact .line{font-size:20px;letter-spacing:.08em;margin-top:10px;color:#e8ddcf}
+.contact .vr{width:1px;height:90px;background:linear-gradient(180deg,transparent,var(--gold),transparent);margin:0 40px}
+.contact .phone{text-align:right}
+.contact .small{font-size:14px;font-weight:600;letter-spacing:.3em;color:var(--gold)}
+.contact .num{font-family:'Playfair Display',serif;font-weight:700;font-size:44px;margin-top:6px;letter-spacing:.02em}
+</style></head>
+<body><div class="poster" id="p">
+  <div class="arch2"></div>
+  <div class="arch"><div class="inner"><img src="salon.jpg"></div></div>
+  <div class="hair"><img src="hair.png"></div>
+
+  <div class="logo"><img src="logo.png"></div>
+
+  <div class="left">
+    <div class="kicker">DOŁĄCZ DO NASZEGO ZESPOŁU</div>
+    <div class="title goldtext">FRYZJERKA</div>
+    <div class="script">Poszukiwana</div>
+    <div class="divider"><span></span><i>✦</i><span></span></div>
+    <ul>
+      <li><b>✓</b>Prężnie działający salon</li>
+      <li><b>✓</b>Piękne środowisko pracy</li>
+      <li><b>✓</b>Wielka baza klientów</li>
+      <li><b>✓</b>Elastyczne godziny pracy</li>
+      <li><b>✓</b>Wspierający, rozwojowy zespół</li>
+    </ul>
+  </div>
+
+  <div class="contact"><div class="in">
+    <div class="addr">
+      <div class="name goldtext">Elysium · Bradford</div>
+      <div class="line">5 Peckover St. &nbsp;·&nbsp; BD1 5BE</div>
+    </div>
+    <div class="vr"></div>
+    <div class="phone">
+      <div class="small">ZADZWOŃ / NAPISZ</div>
+      <div class="num goldtext">07505 779013</div>
+    </div>
+  </div></div>
+</div>
+<script>
+const p=document.getElementById('p');
+let s=7;const r=()=>{s=(s*9301+49297)%233280;return s/233280};
+for(let i=0;i<46;i++){const d=document.createElement('div');d.className='dust';const z=2+r()*7;
+ d.style.cssText=`width:${z}px;height:${z}px;left:${r()*1080}px;top:${r()*1080}px;opacity:${.25+r()*.6}`;p.prepend(d)}
+[[600,60],[600,830],[640,880],[40,640],[560,190]].forEach(([x,y],i)=>{const e=document.createElement('div');e.className='spark';e.textContent='✦';
+ e.style.cssText=`left:${x}px;top:${y}px;font-size:${14+i*3}px`;p.appendChild(e)});
+</script>
+</body></html>

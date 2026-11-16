@@ -1,4 +1,6 @@
-# Black Friday — RF Microneedling
+# P2 (Pon 16.11) — Grafika RF + opis edukacyjny
+
+Grafika: `rf_microneedling_post.png` (1080×1350). Słowo-klucz w DM: **RF**.
 
 ## Caption (EN)
 
@@ -13,8 +15,12 @@ Results: build over 4–6 weeks
 🖤 Black Friday: £110 (was £180)
 Send "RF" to book.
 
+#RFMicroneedling #BradfordSkinClinic #BradfordAesthetics #SkinTightening #WestYorkshireSkin #BlackFridayBeauty #BlackFridayUK
+
 ## Caption (PL)
 
 Kolagen sam nie wróci, ale można go obudzić. ✨
 RF mikroigłowy na zmarszczki, pory i blizny.
 🖤 £110 zamiast £180. Napisz RF.
+
+#PolkiWUK #KosmetologBradford #PolskaKosmetologia #RFMicroneedling #BradfordSkinClinic

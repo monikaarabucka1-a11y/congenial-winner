@@ -1,0 +1,7 @@
+.s{background:#0b0907 url(rf_photo.jpg) center/cover no-repeat}
+.shade{position:absolute;inset:0;background:
+ linear-gradient(180deg,rgba(10,7,5,.93) 0%,rgba(10,7,5,.82) 20%,rgba(10,7,5,.35) 36%,rgba(10,7,5,0) 46%,rgba(10,7,5,0) 56%,rgba(10,7,5,.55) 68%,rgba(10,7,5,.9) 82%,rgba(10,7,5,.96) 100%)}
+.warm{position:absolute;inset:0;background:radial-gradient(ellipse 700px 500px at 50% 18%,rgba(150,100,50,.18),transparent 70%);mix-blend-mode:screen}
+.glass{background:rgba(18,13,9,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1.5px solid rgba(216,173,116,.6);border-radius:26px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.ds{filter:drop-shadow(0 4px 18px rgba(0,0,0,.75))}
+.tsh{text-shadow:0 2px 12px rgba(0,0,0,.8)}

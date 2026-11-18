@@ -4,8 +4,8 @@ Wg „Plan marketingowy” (P3, cel: przed i po, słowo-klucz **GLOW**) i „Pla
 Publikacja posta: 19:00–20:00. Stories: 8:30 · 13:00 · 20:30.
 
 ## ⚠️ Przed publikacją
-1. Wrzuć do `src/` dwa prawdziwe zdjęcia klientki: `before.jpg` i `after.jpg` (to samo światło i kąt, bez filtrów, **zgoda klientki na piśmie**).
-2. Opcjonalnie zrzut opinii jako `src/review.png` (za zgodą, bez nazwiska). Możesz też dodać go w Instagramie jako naklejkę ze zdjęciem na gotowe tło.
+1. ✅ Zdjęcia przed i po są już w grafikach (`src/before.jpg`, `src/after.jpg`). Upewnij się, że masz zgodę klientki na publikację.
+2. ✅ Opinia Izabeli B. jest wstawiona w story 2 (bez nazwiska). Dobrze mieć jej zgodę na udostępnienie.
 3. Uruchom `node src/render.js`. Grafiki zapiszą się w tym folderze ze zdjęciami w ramkach.
 
 ---
@@ -50,7 +50,7 @@ Po publikacji: oznacz lokalizację „Bradford, West Yorkshire”, odpowiadaj na
 - Odpowiedzi zachowaj: wykorzystasz je w piątkowym Q&A (20.11).
 
 ## STORY 2 — 13:00 · `story2_1300_review.png`
-- Wklej zrzut opinii (Google lub DM, za zgodą, bez nazwiska) w puste pole na środku.
+- Opinia jest już na grafice (Izabela B., rekomendacja z Facebooka).
 - **Naklejka „Link”** pod napisem „Thank you for trusting us”: link do opinii Google, tekst „Leave us a review”.
 - Zapisz w wyróżnionych: OPINIE.
 

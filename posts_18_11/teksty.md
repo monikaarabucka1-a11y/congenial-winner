@@ -62,3 +62,9 @@ Po publikacji: oznacz lokalizację „Bradford, West Yorkshire”, odpowiadaj na
 
 ## Odpowiedź na DM „GLOW” (szablon)
 Hi! Thank you for your message 🤍 Our Black Friday price for Hydrogen Pure Glow is £55 instead of £75, for treatments booked by 30 November. Could you tell me a little about your skin: what would you most like to improve? I’ll send you available times this week.
+
+## STORY wieczorne — 20:30 · `story4_2030_offer.png` (zamiast story 3, bo przed i po już było)
+- Naklejka **Link** (Fresha, tekst „Book Glow £55”) pod napisem „BOOK YOUR SLOT ↓”.
+- Naklejka **Odliczanie** do 30.11, 23:59, nazwa „Black Friday ends”, w pustym miejscu nad logo.
+- Opcjonalnie PL: „£55 zamiast £75 · napisz GLOW”.
+- Po publikacji posta P3: udostępnij go w relacji z naklejką „New post”.

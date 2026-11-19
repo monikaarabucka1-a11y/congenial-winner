@@ -485,14 +485,38 @@ def sfx_track():
     add(ding(2093, 1.4), T('cta', 0.8), 0.45); add(tick(), T('cta', 1.0), 0.6)
     return tr
 
+_clean = {}
+def clean_clip(clip):
+    """Whole-clip denoise with a noise profile taken from the clip's quietest moments, then a soft expander."""
+    if clip in _clean: return _clean[clip]
+    import noisereduce as nr
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', os.path.join(SRC, clip + '.mov'), '-vn', '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'],
+                         capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, np.float32).astype(np.float64)
+    x = signal.sosfilt(signal.butter(4, 90, 'high', fs=SR, output='sos'), x)
+    hop = int(0.05 * SR)
+    rms = np.array([np.sqrt(np.mean(x[j:j + hop] ** 2)) for j in range(0, len(x) - hop, hop)])
+    q = np.argsort(rms)[:max(10, len(rms) // 6)]
+    noise = np.concatenate([x[j * hop:(j + 1) * hop] for j in sorted(q)])
+    y = nr.reduce_noise(y=x, sr=SR, y_noise=noise, stationary=True, prop_decrease=0.95, n_fft=2048, freq_mask_smooth_hz=300, time_mask_smooth_ms=60)
+    y = nr.reduce_noise(y=y, sr=SR, stationary=False, prop_decrease=0.6, n_fft=2048)
+    # expander: pull down what is left between words (-14 dB), smooth so words are never clipped
+    env = np.array([np.sqrt(np.mean(y[j:j + hop] ** 2)) for j in range(0, len(y), hop)])
+    edb = 20 * np.log10(env + 1e-9); thr = np.percentile(edb, 92) - 24
+    g = np.where(edb > thr, 1.0, 10 ** (-14 / 20))
+    g = np.maximum.reduce([g, np.roll(g, 1), np.roll(g, 2), np.roll(g, -1), np.roll(g, -2), np.roll(g, -3)])  # hold/lookahead
+    g = np.convolve(g, np.ones(3) / 3, 'same')
+    gs = np.interp(np.arange(len(y)), np.arange(len(g)) * hop + hop / 2, g)
+    y = y * gs
+    _clean[clip] = y.astype(np.float32); return _clean[clip]
+
 def voice_track():
     parts = []
     for s in TL:
         n = int(round(s['dur'] * FPS)) * SR // FPS
         if s['kind'] == 'card': parts.append(np.zeros(n)); continue
-        raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', f"{s['a']:.3f}", '-i', os.path.join(SRC, s['clip'] + '.mov'), '-t', f"{s['dur'] + 0.1:.3f}",
-                              '-vn', '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-        x = np.frombuffer(raw, np.float32).astype(float)[:n]
+        full = clean_clip(s['clip']); a = int(s['a'] * SR)
+        x = full[a:a + n].astype(float)
         if len(x) < n: x = np.pad(x, (0, n - len(x)))
         f = int(0.012 * SR); x[:f] *= np.linspace(0, 1, f); x[-f:] *= np.linspace(1, 0, f)
         parts.append(x)
@@ -505,16 +529,16 @@ if __name__ == '__main__':
     vo = voice_track(); wavfile.write(base + '_voice.wav', SR, vo.astype(np.float32))
     # voice polish: rumble cut, denoise, presence, compression, loudness
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', base + '_voice.wav', '-af',
-        'highpass=f=85,afftdn=nf=-30,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=250:t=q:w=1:g=-2,acompressor=threshold=-20dB:ratio=3:attack=8:release=120:makeup=4,loudnorm=I=-15:TP=-1.5:LRA=7',
+        'highpass=f=90,lowpass=f=13000,afftdn=nr=10:nf=-50:tn=1,equalizer=f=3000:t=q:w=1.2:g=3,equalizer=f=220:t=q:w=1:g=-2.5,equalizer=f=8000:t=q:w=1:g=-2,acompressor=threshold=-24dB:ratio=4:attack=5:release=100:makeup=6,loudnorm=I=-12:TP=-1:LRA=5,alimiter=limit=0.95',
         '-ar', str(SR), base + '_voice_p.wav'], check=True)
     sr, v = wavfile.read(base + '_voice_p.wav'); v = v.astype(np.float32)
     if v.dtype != np.float32 or np.abs(v).max() > 2: v = v / 32768.0
     sf = sfx_track()
     L = max(len(v), int(TOTAL * SR)); mix = np.zeros(int(TOTAL * SR))
     mix[:min(len(v), len(mix))] += v[:len(mix)]
-    mix += sf[:len(mix)] * 0.55
+    mix += sf[:len(mix)] * 0.32
     fo = int(0.25 * SR); mix[-fo:] *= np.linspace(1, 0, fo)
-    mix = np.tanh(mix * 1.05) / np.tanh(1.05) * 0.95
+    mix = np.tanh(mix * 1.0) / np.tanh(1.0) * 0.97
     wavfile.write(base + '_mix.wav', SR, mix.astype(np.float32))
     print('audio ok', TOTAL, flush=True)
     if only == 'audio': sys.exit()

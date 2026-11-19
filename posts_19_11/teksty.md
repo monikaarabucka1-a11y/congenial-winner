@@ -31,7 +31,7 @@ Your skin isn’t “just dry” this winter. You might be doing one of these 3 
 The fix? Ceramides. They’re the “cement” between your skin cells. They rebuild your barrier, so water stays in and skin feels smooth and calm again.
 
 That’s exactly what our PorCerAmid treatment does 🤍
-🖤 Black Friday: £55 (was £85), until 30 November
+🖤 Black Friday: £55 (was £85). Book by 30 November and enjoy your treatment any time until 31 January
 
 💬 Send “CERAMID” and I’ll send you available times
 🔖 Save this for later & share it with a friend whose skin hates winter
@@ -44,7 +44,7 @@ That’s exactly what our PorCerAmid treatment does 🤍
 Twoja skóra zimą nie jest „po prostu sucha”. Sprawdź, czy nie popełniasz tych 3 błędów 👇
 1️⃣ gorąca woda 2️⃣ brak SPF 3️⃣ za mało nawilżenia
 Rozwiązanie to ceramidy, które odbudowują barierę skóry. Tak działa PorCerAmid 🤍
-🖤 Black Friday: £55 zamiast £85, do 30.11
+🖤 Black Friday: £55 zamiast £85. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia
 💬 Napisz CERAMID, a wyślę wolne terminy. Zapisz rolkę na później 🔖
 
 #PolkiWUK #KosmetologBradford #PolskaKosmetologia #BradfordSkinClinic

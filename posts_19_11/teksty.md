@@ -21,18 +21,31 @@ Monika mówi do kamery około 30 s (skrypt jest w planie). Są dwa zestawy plans
 | 3_nawilzenie | „Błąd numer 3: za mało nawilżenia…” | |
 | 4_rozwiazanie | „…ceramidów… PorCerAmid. Zapisz rolkę” | do końca |
 
-### Opis (EN)
-3 winter skincare mistakes I see every week: 1) hot water, 2) skipping SPF, 3) not enough hydration. Your skin barrier needs ceramides in winter — that’s exactly what our PorCerAmid treatment delivers (£55 instead of £85 this Black Friday). Save this for later 🤍
-💬 Send “CERAMID” and we’ll send you available times
+### Opis (EN), wersja do gotowej rolki `rolka_R3/R3_3_winter_mistakes_1080x1920.mp4`
+Your skin isn’t “just dry” this winter. You might be doing one of these 3 things 👇
+
+1️⃣ Hot showers & hot water on your face: they strip your skin’s natural lipids
+2️⃣ Skipping SPF because it’s grey outside: UVA still reaches your skin in November
+3️⃣ Not enough hydration: with the heating on, your skin loses water faster
+
+The fix? Ceramides. They’re the “cement” between your skin cells. They rebuild your barrier, so water stays in and skin feels smooth and calm again.
+
+That’s exactly what our PorCerAmid treatment does 🤍
+🖤 Black Friday: £55 (was £85), until 30 November
+
+💬 Send “CERAMID” and I’ll send you available times
+🔖 Save this for later & share it with a friend whose skin hates winter
 
 📍 Elysium Clinic, Bradford, West Yorkshire
 
-#Ceramides #WinterSkincare #SkinBarrier #PorCerAmid #BradfordSkinClinic #BradfordAesthetics #WestYorkshireSkin #BlackFridayBeauty #BlackFridayUK
+#WinterSkincare #Ceramides #SkinBarrier #DrySkin #PorCerAmid #SkincareTips #BradfordSkinClinic #BradfordAesthetics #WestYorkshireSkin #BlackFridayBeauty #BlackFridayUK
 
 ### Opis (PL, krótko: relacje / grupy FB)
-3 błędy, które niszczą skórę zimą: gorąca woda, brak SPF i za mało nawilżenia. 🥶 Zimą skóra potrzebuje ceramidów, które odbudowują jej barierę. Tak działa PorCerAmid.
-🖤 Black Friday: £55 zamiast £85, do 30.11. Napisz CERAMID, a wyślemy wolne terminy.
-Zapisz rolkę, żeby nie zapomnieć 🤍
+Twoja skóra zimą nie jest „po prostu sucha”. Sprawdź, czy nie popełniasz tych 3 błędów 👇
+1️⃣ gorąca woda 2️⃣ brak SPF 3️⃣ za mało nawilżenia
+Rozwiązanie to ceramidy, które odbudowują barierę skóry. Tak działa PorCerAmid 🤍
+🖤 Black Friday: £55 zamiast £85, do 30.11
+💬 Napisz CERAMID, a wyślę wolne terminy. Zapisz rolkę na później 🔖
 
 #PolkiWUK #KosmetologBradford #PolskaKosmetologia #BradfordSkinClinic
 

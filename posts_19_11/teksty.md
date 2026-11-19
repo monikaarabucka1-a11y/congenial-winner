@@ -39,7 +39,8 @@ Zapisz rolkę, żeby nie zapomnieć 🤍
 ---
 
 ## STORY 1 (8:30): `story1_0830_myth_or_fact.png`
-- **Naklejka „Quiz”** na środku, w pustym miejscu między cytatem a napisem „VOTE ABOVE”.
+- Tło: zimowe zdjęcie (dziewczyna w żółtej czapce, `src/winter.jpg`).
+- **Naklejka „Quiz”** w ciemnym, pustym miejscu między cytatem a napisem „VOTE ABOVE” (dolna część ekranu), tak żeby nie zasłaniała twarzy.
 - Pytanie: „Myth or fact?”. Odpowiedzi: **Myth** (ustaw jako poprawną) / Fact.
 
 ## STORY 1b (bonus, ok. 10:30–11:00): `story1b_answer_myth.png`

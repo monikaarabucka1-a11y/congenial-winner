@@ -47,7 +47,12 @@ Zapisz rolkę, żeby nie zapomnieć 🤍
 - Odpowiedź na quiz: MYTH, a pod spodem 3 krótkie wyjaśnienia. Nie ma jej w planie, wrzuć ją, jeśli quiz zbierze głosy.
 
 ## STORY 2 (13:00): Monika i ceramidy
-Masz dwie wersje:
+**Główna wersja: `story2_1300_ceramides_zdjecie.png`** (zdjęcie kapsułek z ceramidami + tekst).
+- Wgraj ją jako story i dodaj **naklejkę „Ankieta”** w pustym miejscu pod napisem „POLL ↓” (napis zostanie przykryty naklejką).
+- W naklejce wpisz pytanie: **„Does your skin feel tight in winter?”**, odpowiedzi: **Yes / No**.
+- `podglad_story2_z_ankieta.png` to tylko podgląd, jak to będzie wyglądać. Nie publikuj go, bo ankieta na nim nie jest klikalna.
+
+Inne wersje, jeśli wolisz:
 - `story2_1300_overlay_na_wideo.png`: przezroczysta nakładka. Nagraj Monikę (ok. 10 s: „Ceramides are the cement between your skin cells. Without them, water escapes and skin gets rough”) i nałóż grafikę w IG jako naklejkę ze zdjęcia z galerii albo w CapCut.
 - `story2_1300_ceramides.png`: plansza z ilustracją „murku” (z ceramidami i bez). Wrzuć ją zaraz po wideo albo zamiast niego.
 - **Naklejka „Ankieta”** pod napisem „TELL ME”: „Does your skin feel tight in winter?” Yes / No.

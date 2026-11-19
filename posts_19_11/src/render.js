@@ -6,6 +6,8 @@ const jobs=[ // [source html, output png, transparent?]
  ['story1_quiz','story1_0830_myth_or_fact.png'],
  ['story1b_answer','story1b_answer_myth.png'],
  ['story2_ceramides','story2_1300_ceramides.png'],
+ ['story2_photo','story2_1300_ceramides_zdjecie.png'],
+ ['story2_photo','podglad_story2_z_ankieta.png',false,'<div class="poll"><div class="qq">Does your skin feel tight in winter?</div><div class="opts"><div>YES</div><div>NO</div></div></div>'],
  ['story2_overlay','story2_1300_overlay_na_wideo.png',true],
  ['story3_offer','story3_2030_porceramid.png'],
 ];
@@ -26,7 +28,7 @@ const reelHtml=(b,mode)=>{const [,n,t,sub,pl]=b;const full=mode==='full';
   .replace('__DECO__',full?'<div class="deco"></div><div class="spark" style="left:880px;top:300px;font-size:40px">✦</div><div class="spark" style="left:150px;top:1450px;font-size:26px">✦</div>':'')
   .replace('__LOGO__',full?'<div class="logo"><img src="logo.png"></div>':'').replace('__BODY__',body);};
 (async()=>{const b=await chromium.launch();
- const all=[...jobs.map(([n,o,t])=>[fs.readFileSync(path.join(D,n+'.html'),'utf8'),o,t])];
+ const all=[...jobs.map(([n,o,t,poll])=>[fs.readFileSync(path.join(D,n+'.html'),'utf8').replace('__POLL__',poll||'<div class="zone">↓ POLL ↓</div>'),o,t])];
  fs.mkdirSync(path.join(OUT,'rolka_R3_plansze/pelne'),{recursive:true});fs.mkdirSync(path.join(OUT,'rolka_R3_plansze/nakladki_na_wideo'),{recursive:true});
  for(const bd of boards){all.push([reelHtml(bd,'full'),`rolka_R3_plansze/pelne/${bd[0]}.png`]);all.push([reelHtml(bd,'ov'),`rolka_R3_plansze/nakladki_na_wideo/${bd[0]}.png`,true]);}
  let i=0;for(const [src,out,tr] of all){const p=await b.newPage({viewport:{width:1080,height:1920}});

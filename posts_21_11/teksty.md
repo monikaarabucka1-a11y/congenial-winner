@@ -1,4 +1,4 @@
-# Sob 21.11: ElastiStrom (rękawice mikroprądowe Zemits). P4 karuzela + stories
+# Sob 21.11: ElastiStrom & RF Contour (rękawice mikroprądowe Zemits + RF bez igieł). P4 karuzela + stories
 
 Słowo-klucz w DM: **LIFT** · BF: **£130 zamiast £210**, rezerwacja do 30.11, zabieg do 31.01.
 Feed (weekend): **10:00–11:00**. Stories: **9:30 · 13:00 · 18:00**.
@@ -8,31 +8,37 @@ Feed (weekend): **10:00–11:00**. Stories: **9:30 · 13:00 · 18:00**.
 - Technologia: **wyłącznie mikroprądy** przewodzone przez rękawice ze **srebrną nicią**. Bez maszyny i bez głowic. Producent nie podaje RF ani EMS.
 - Zabieg: masaż twarzy dłońmi w rękawicach (pod spodem rękawiczki nitrylowe).
 - Deklaracje producenta: mniej zmarszczek, lepszy drenaż limfatyczny, wsparcie kolagenu i elastyny, „uniesiony” owal. Efekty są indywidualne.
-- **Nie piszemy:** „RF”, „elektrostymulacja mięśni + RF”, „głowica”, „elektrody”, „gwarantowany efekt”, „jak lifting chirurgiczny”.
-- W „Planie marketingowym” i „Planie stories” są jeszcze błędne opisy („ElastiStorm & RF Contour”, „elektrody i głowica”). Trzeba je poprawić przed R5 (nd 22.11) i P5 (pon 23.11).
+- **Zabieg w Elysium = ElastiStrom & RF Contour:** RF (fala radiowa) bez igieł, który ujędrnia i napina skórę, oraz rękawice ElastiStrom (mikroprądy i modelujący masaż). Głowica jest tylko w części RF, rękawice głowic nie mają.
+- **Nie piszemy:** „ElastiStorm”, „rękawice RF”, „elektrostymulacja mięśni (EMS)”, „elektrody”, „gwarantowany efekt”, „jak lifting chirurgiczny”.
+- W „Planie marketingowym” i „Planie stories” trzeba poprawić pisownię (ElastiStorm → ElastiStrom) i opis „elektrostymulacja mięśni + RF” (powinno być: mikroprądy + RF) przed R5 (nd 22.11) i P5 (pon 23.11).
 
 ## Zdjęcia
-To materiały producenta Zemits (z kliniki partnerskiej i z sesji produktowej). Nie przedstawiaj ich jako klientek Elysium ani efektów z Elysium. Na grafikach nie ma takich sugestii. Upewnij się, że Zemits pozwala klinikom używać tych materiałów (zwykle tak, w ramach materiałów marketingowych dla partnerów).
+- Rękawice: materiały producenta Zemits (z kliniki partnerskiej i z sesji produktowej). Nie przedstawiaj ich jako klientek Elysium ani efektów z Elysium. Upewnij się, że Zemits pozwala klinikom używać tych materiałów.
+- RF (slajdy 2 i 3): to zdjęcia stockowe, jedno pochodzi z wyszukiwarki Google. Upewnij się, że masz do nich licencję (np. z Freepik lub Adobe Stock). Jeśli nie, podmienię je na zdjęcie z Waszej kliniki albo z banku zdjęć z licencją.
 
 ---
 
 ## POST P4: karuzela `P4_karuzela/slajd_1…6.png` (1080×1350), 10:00–11:00
-1. A lift without needles: ElastiStrom microcurrent gloves by Zemits
-2. The gloves *are* the device: silver thread, no machine, no probes, no needles
-3. Microcurrent + sculpting massage: jak działa
-4. Fresher, more lifted: co zauważysz („Results vary”)
-5. Made for tired skin: dla kogo
-6. Oferta: £130 zamiast £210 · book by 30.11 · use until 31.01 · Send “LIFT”
+1. A lift without needles: ElastiStrom & RF Contour, microcurrent gloves + radiofrequency
+2. Tighten & sculpt: dwie technologie w jednym zabiegu
+3. Step 1 · RF Contour: warmth that firms
+4. Step 2 · ElastiStrom gloves: hands that lift
+5. Firmer, more lifted: co zauważysz („Results vary”)
+6. Oferta: ElastiStrom & RF Contour £130 zamiast £210 · book by 30.11 · use until 31.01 · Send “LIFT”
 
 ### Opis (EN)
-Want a lifted, fresher face for Christmas, without a single needle? 🧤✨
+Want a firmer, more lifted face for Christmas, without a single needle? ✨
 
-Meet ElastiStrom by Zemits: microcurrent gloves woven with silver thread. Your therapist’s hands become the device, so the treatment is a deeply relaxing, sculpting facial massage while gentle microcurrent works on your skin and facial muscles.
+Meet ElastiStrom & RF Contour: two technologies in one treatment 👇
 
-✔️ helps tone and lift the jawline and neck
-✔️ boosts circulation and lymphatic drainage, so less puffiness
-✔️ supports collagen and elastin over a course
-✔️ non-invasive: no needles, no downtime
+1️⃣ RF Contour: gentle radiofrequency warms the deeper layers of the skin to stimulate collagen and elastin, so skin looks tighter and smoother
+2️⃣ ElastiStrom by Zemits: microcurrent gloves woven with silver thread. Your therapist’s hands become the device, sculpting your face with a deeply relaxing massage that tones facial muscles and boosts lymphatic drainage
+
+✔️ a more defined jawline and neck
+✔️ firmer, fresher-looking skin, less puffiness
+✔️ no needles, no downtime
+
+Ideal if you’ve noticed a softer jawline, loss of firmness or a tired, puffy face.
 
 🖤 Black Friday: £130 (was £210). Book by 30 November and enjoy your treatment any time until 31 January
 💬 Send “LIFT” and I’ll send you available times
@@ -41,10 +47,10 @@ Meet ElastiStrom by Zemits: microcurrent gloves woven with silver thread. Your t
 📍 Elysium Clinic, Bradford, West Yorkshire
 Results vary from person to person.
 
-#ElastiStrom #Zemits #MicrocurrentFacial #NonSurgicalFacelift #JawlineLift #BradfordSkinClinic #BradfordAesthetics #BlackFridayUK
+#ElastiStrom #Zemits #RFSkinTightening #MicrocurrentFacial #NonSurgicalFacelift #JawlineLift #BradfordSkinClinic #BlackFridayUK
 
 ### Opis (PL, krótko: relacje / grupy FB)
-Lifting bez igieł? 🧤✨ ElastiStrom od Zemits to rękawice mikroprądowe ze srebrną nicią. Zabieg to relaksujący, modelujący masaż twarzy, który napina owal i szyję, wspiera drenaż limfatyczny i produkcję kolagenu. Bez igieł i bez rekonwalescencji.
+Lifting bez igieł? ✨ ElastiStrom & RF Contour to dwie technologie w jednym zabiegu: RF (fala radiowa) ujędrnia i napina skórę, a rękawice mikroprądowe ElastiStrom od Zemits modelują owal i szyję podczas relaksującego masażu. Bez igieł i bez rekonwalescencji.
 🖤 Black Friday: £130 zamiast £210. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia.
 💬 Napisz LIFT, a wyślę wolne terminy. Efekty są indywidualne.
 
@@ -63,9 +69,9 @@ Do zrobienia: nagranie + wybrane pytania. Mogę zrobić planszę z pytaniem albo
 
 ## STORY 3 (18:00): `story3_1800_oferta_elastistrom.png`
 - Najpierw udostępnij P4 w relacji z naklejką „New post”, potem dodaj tę planszę.
-- **Naklejka Link** (Fresha, „Book ElastiStrom £130”) pod „BOOK YOUR SLOT ↓”.
+- **Naklejka Link** (Fresha, „Book ElastiStrom & RF £130”) pod „BOOK YOUR SLOT ↓”.
 - **Odliczanie** do 30.11, 23:59 („Black Friday ends”).
 - Zapisz w wyróżnionych: ZABIEGI + BLACK FRIDAY.
 
 ## Odpowiedź na DM „LIFT” / „What’s that?” (szablon)
-Hi! Thank you for your message 🤍 ElastiStrom is a microcurrent facial using special Zemits gloves woven with silver thread. The treatment is a sculpting facial massage while gentle microcurrent tones the skin and facial muscles, supports lymphatic drainage and collagen. No needles and no downtime. This Black Friday it’s £130 instead of £210: book by 30 November and use it any time until 31 January. Would you like me to send you a few available times?
+Hi! Thank you for your message 🤍 ElastiStrom & RF Contour combines two technologies: needle-free radiofrequency, which gently warms the skin to firm and tighten it, and ElastiStrom microcurrent gloves by Zemits, which sculpt your face with a relaxing massage, tone the facial muscles and support lymphatic drainage. No needles and no downtime. This Black Friday it’s £130 instead of £210: book by 30 November and use it any time until 31 January. Would you like me to send you a few available times?

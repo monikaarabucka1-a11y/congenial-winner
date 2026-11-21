@@ -1,7 +1,7 @@
 # Sob 21.11: ElastiStrom & RF Contour (rękawice mikroprądowe Zemits + RF bez igieł). P4 karuzela + stories
 
 Słowo-klucz w DM: **LIFT** · BF: **£130 zamiast £210**, rezerwacja do 30.11, zabieg do 31.01.
-Feed (weekend): **10:00–11:00**. Stories: **9:30 · 13:00 · 18:00**.
+Feed (weekend): **10:00–11:00**. Stories: **9:30 · 11:00 · 13:00 · 15:30 · 18:00**.
 
 ## ⚠️ Fakty o urządzeniu (sprawdzone na zemits.co.uk / zemits.com)
 - Oficjalna nazwa: **Zemits ElastiStrom**, „Portable Microcurrent Skin Toning Gloves Device”.
@@ -65,13 +65,22 @@ Lifting bez igieł? ✨ ElastiStrom & RF Contour to dwie technologie w jednym za
   - **B · Silver thread + microcurrent** (ustaw jako poprawną)
   - C · Magic ✨
 - `podglad_story1_z_quizem.png` to tylko podgląd, nie publikuj go.
-- Około 11:00, po karuzeli, możesz dorzucić odpowiedź: udostępnij P4 z dopiskiem „Answer: B! Swipe to see how it works 👉”.
 - Na jutro warto wrzucić naklejkę „Pytanie” („Ask me anything about lifting without needles”). Z odpowiedzi zrobimy Q&A w kolejnych dniach.
+
+## STORY 1b (11:00, po publikacji karuzeli): `story_1100_odpowiedz_quiz.png`
+- Odpowiedź na poranny quiz: „Answer: B. Silver thread + microcurrent ✨” i dwa zdania o rękawicach i RF.
+- Zaraz po niej udostępnij karuzelę P4 w relacji z naklejką „New post”. Napis „SEE THE NEW POST 👉” prowadzi do niej.
 
 ## STORY 2 (13:00): `story2_1300_elastistrom_ankieta.png`
 - Naklejka **Ankieta** w miejscu „POLL ↓”: pytanie **„Heard of ElastiStrom?”**, odpowiedzi **Yes / What’s that?**
 - `podglad_story2_z_ankieta.png` to tylko podgląd, nie publikuj go.
 - Osobom z odpowiedzią „What’s that?” odpisz szablonem (niżej).
+
+## STORY 2b (15:30): `story_1530_what_to_expect.png`
+- „Your lift, step by step”: 1) cleanse & prep, 2) RF Contour, 3) ElastiStrom gloves, 4) back to your day (no needles, no downtime).
+- **Naklejka Suwak emoji** 😌 w miejscu „EMOJI SLIDER ↓”: „How relaxing does this look?”.
+- `podglad_story_1530_z_suwakiem.png` to tylko podgląd.
+- Jeśli kolejność kroków w Elysium jest inna (np. najpierw rękawice, potem RF), daj znać, a poprawię.
 
 ## STORY 3 (18:00): `story3_1800_oferta_elastistrom.png`
 - Najpierw udostępnij P4 w relacji z naklejką „New post”, potem dodaj tę planszę.

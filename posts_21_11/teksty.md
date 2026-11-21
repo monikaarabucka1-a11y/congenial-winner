@@ -58,9 +58,15 @@ Lifting bez igieł? ✨ ElastiStrom & RF Contour to dwie technologie w jednym za
 
 ---
 
-## STORY 1 (9:30): Q&A
-Monika odpowiada do kamery na 1–2 pytania z piątkowej naklejki „Ask the expert” (napisy PL). Naklejka „Pytanie”: „Got another question?”.
-Do zrobienia: nagranie + wybrane pytania. Mogę zrobić planszę z pytaniem albo zmontować wideo z napisami.
+## STORY 1 (9:30): quiz `story1_0930_quiz.png` (zamiast Q&A, bo w piątek nie było naklejki z pytaniami)
+- Na ekranie: „Guess what makes these gloves work?”, zbliżenie rękawicy ElastiStrom.
+- **Naklejka Quiz** w miejscu „QUIZ ↓”: pytanie **„What makes them work?”**, odpowiedzi:
+  - A · Tiny needles
+  - **B · Silver thread + microcurrent** (ustaw jako poprawną)
+  - C · Magic ✨
+- `podglad_story1_z_quizem.png` to tylko podgląd, nie publikuj go.
+- Około 11:00, po karuzeli, możesz dorzucić odpowiedź: udostępnij P4 z dopiskiem „Answer: B! Swipe to see how it works 👉”.
+- Na jutro warto wrzucić naklejkę „Pytanie” („Ask me anything about lifting without needles”). Z odpowiedzi zrobimy Q&A w kolejnych dniach.
 
 ## STORY 2 (13:00): `story2_1300_elastistrom_ankieta.png`
 - Naklejka **Ankieta** w miejscu „POLL ↓”: pytanie **„Heard of ElastiStrom?”**, odpowiedzi **Yes / What’s that?**

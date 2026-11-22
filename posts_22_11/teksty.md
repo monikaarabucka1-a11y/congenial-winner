@@ -96,10 +96,11 @@ Zostało 8 dni Black Friday w Elysium 🖤 RF mikroigłowy £110 · ElastiStrom 
 - Na grafice jest obietnica: „I’ll answer on camera this week”. Odpowiedzi zbieraj na Q&A w tygodniu (nagranie Moniki).
 - Podgląd: `podglad_story1b_pytanie.png`.
 
-## STORY 2 (13:00): `story2_1300_spf_dlonie.png`
-- „Your hands tell your age too” i 3 porady: SPF codziennie, ponownie po umyciu rąk, krem na noc. Pod spodem „Hand Anti-Ageing from £70”.
-- **Naklejka Suwak emoji** 👋 w miejscu „EMOJI SLIDER ↓”: „Do you use SPF on your hands?”.
-- Wersja z Moniką: nagraj ją, jak nakłada krem z SPF na dłonie, i wrzuć tę planszę zaraz po wideo.
+## STORY 2 (13:00): `story2_1300_dlonie.png`
+- „Your hands tell your age too”: skóra dłoni jest cieńsza, więc szybciej widać na niej suchość i zmarszczki.
+- 3 porady: krem do rąk codziennie, ponownie po umyciu rąk, bogatszy krem na noc. Pod spodem „Hand Anti-Ageing · from £70”.
+- **Naklejka Suwak emoji** 👋 w miejscu „EMOJI SLIDER ↓”: „Do you use hand cream every day?”.
+- Wersja z Moniką: nagraj ją, jak wmasowuje krem w dłonie, i wrzuć tę planszę zaraz po wideo.
 - Podgląd: `podglad_story2_suwak.png`.
 
 ## STORY 3 (18:00): `story3_1800_8_days_left.png`

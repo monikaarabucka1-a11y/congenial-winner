@@ -35,12 +35,12 @@ def card_img(key, p):
     out = Image.new('RGBA', (CW + 12, CH + 12)); out.paste(im, (0, 0), border); out.paste(inner, (0, 0), MASK)
     return out
 
-SEGS = [('A', 3.6), ('B', 3.0), ('C', 3.0), ('how', 3.2), ('price', 2.8), ('cta', 3.0)]
+SEGS = [('A', 3.6), ('E', 3.2), ('B', 3.0), ('how', 3.2), ('price', 2.8), ('cta', 3.0)]
 T0 = {}; t = 0
 for n, d in SEGS: T0[n] = t; t += d
 TOTAL = t; NF = int(round(TOTAL * FPS))
-TITLES = {'A': ('SAME JAWLINE.', 'one session later'), 'B': ('FIRMER CONTOUR', 'jawline & neck'), 'C': ('FRESHER SKIN', 'with a healthy glow')}
-AFTER_K = {'A': 30, 'B': 18, 'C': 18}  # frame when AFTER card lands
+TITLES = {'A': ('SAME JAWLINE.', 'one session later'), 'B': ('FIRMER CONTOUR', 'jawline & neck'), 'C': ('FRESHER SKIN', 'with a healthy glow'), 'E': ('SMOOTHER EYE AREA', 'softer-looking fine lines')}
+AFTER_K = {'A': 30, 'B': 18, 'C': 18, 'E': 20}  # frame when AFTER card lands
 
 def bgbase():
     g = np.zeros((H, W, 3), np.float32); yy = np.linspace(0, 1, H)[:, None]
@@ -61,7 +61,8 @@ def overlay(c, n, rel):
     if n in TITLES:
         t1, t2 = TITLES[n]
         k0 = k + (1 if n == 'A' else -2)
-        E.paste(c, E.text_sprite(t1, F('mont800.ttf', 96), 'gold', stroke=9), W / 2, 200, (0.55 + 0.45 * E.out_back(k0 / 7)) if n == 'A' else pop(k0), 1 if n == 'A' else fade(k0, 2))
+        ts1 = E.text_sprite(t1, F('mont800.ttf', 96), 'gold', stroke=9); fit = min(1.0, 980 / ts1.width)
+        E.paste(c, ts1, W / 2, 200, fit * ((0.55 + 0.45 * E.out_back(k0 / 7)) if n == 'A' else pop(k0)), 1 if n == 'A' else fade(k0, 2))
         E.paste(c, E.text_sprite(t2, F('pf700i.ttf', 60), E.CREAM, stroke=6), W / 2, 300 + lift(k - 6), 1, fade(k - 6, 4))
         kb = k + (8 if n == 'A' else -2)
         if kb > -2:
@@ -113,8 +114,8 @@ def bg(n, rel):
     if n == 'price': return blurbg('A_a', p)
     return BG
 
-SLAMS = [0] + [T0[s] + AFTER_K[s] / FPS for s in ('A', 'B', 'C')] + [T0['price'] + 10 / FPS, T0['cta'] + 8 / FPS]
-TRANS = {T0['B']: 'whip', T0['C']: 'whip', T0['how']: 'zoom', T0['price']: 'whip', T0['cta']: 'zoom'}
+SLAMS = [0] + [T0[s] + AFTER_K[s] / FPS for s in ('A', 'E', 'B')] + [T0['price'] + 10 / FPS, T0['cta'] + 8 / FPS]
+TRANS = {T0['E']: 'whip', T0['B']: 'whip', T0['how']: 'zoom', T0['price']: 'whip', T0['cta']: 'zoom'}
 
 def render_video(path):
     enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
@@ -147,7 +148,7 @@ def render_audio(path):
     def add(x, t, g=1.0):
         i = int(max(0, t) * SR); x = x[:L - i]; tr[i:i + len(x)] += x * g
     add(E.boom(1.0), 0, 0.85); add(E.pop(), 4 / FPS, 0.4)
-    for s in ('A', 'B', 'C'):
+    for s in ('A', 'E', 'B'):
         add(E.whoosh(0.4), T0[s] + 0.0, 0.6)                       # BEFORE card slides in
         add(E.whoosh(0.45, False), T0[s] + (AFTER_K[s] - 6) / FPS, 0.6)  # AFTER card
         add(E.boom(0.7), T0[s] + AFTER_K[s] / FPS, 0.5); add(E.ding(1760, 0.9), T0[s] + AFTER_K[s] / FPS, 0.3)

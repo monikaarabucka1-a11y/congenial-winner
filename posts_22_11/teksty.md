@@ -6,6 +6,33 @@ Słowa-klucze: **LIFT** (ElastiStrom & RF Contour), **BF** (wszystkie oferty).
 
 ---
 
+## R5 (z planu): rolka ElastiStrom & RF Contour przed i po: `rolka_R5_ElastiStrom_przed_po_1080x1920.mp4` (18,6 s)
+**Tylko detale:** klientka zgodziła się na publikację detali, nie całej twarzy. W rolce są wyłącznie kadry żuchwy, szyi i policzka, bez oczu i brwi. Pełne zdjęcia nie zostały dodane do repo.
+- Przebieg: „SAME JAWLINE. one session later” (żuchwa przed/po), „FIRMER CONTOUR · jawline & neck”, „FRESHER SKIN · with a healthy glow”, „ElastiStrom & RF Contour: needle-free RF firms & tightens · microcurrent gloves sculpt jawline & neck · no needles · no downtime”, cena £130 zamiast £210 (8 days left, book by 30.11 · use until 31.01) i CTA „Send me LIFT”.
+- Karty „przed” (u góry) i „po” (na dole) wjeżdżają po kolei z efektem. Na każdej scenie jest dopisek „Real client · shared with permission · results vary”.
+
+### Opis R5 (EN)
+Same jawline. One session. No needles. ✨
+
+Before & after one ElastiStrom & RF Contour treatment: needle-free radiofrequency to firm and tighten, plus Zemits ElastiStrom microcurrent gloves to sculpt the jawline and neck. A firmer contour and fresher, glowing skin, with no downtime.
+
+🖤 Black Friday: £130 (was £210), 8 days left! Book by 30 November, use any time until 31 January
+💬 Send “LIFT” and I’ll send you available times
+🔖 Save this for later
+
+📍 Elysium Clinic, Bradford, West Yorkshire
+Shared with our client’s permission. Results vary from person to person.
+
+#ElastiStrom #RFSkinTightening #MicrocurrentFacial #JawlineLift #BeforeAndAfter #NonSurgicalFacelift #BradfordSkinClinic #BlackFridayUK
+
+### Opis R5 (PL, krótko)
+Ten sam owal, jeden zabieg, bez igieł ✨ ElastiStrom & RF Contour: RF ujędrnia skórę, a rękawice mikroprądowe modelują żuchwę i szyję. Bez rekonwalescencji.
+🖤 £130 zamiast £210, zostało 8 dni. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. Napisz LIFT.
+Publikujemy za zgodą klientki. Efekty są indywidualne.
+#PolkiWUK #KosmetologBradford #ElastiStrom #BradfordSkinClinic
+
+---
+
 ## FEED NA DZIŚ (główna): rolka RF przed i po: `rolka_RF_przed_po_1080x1920.mp4` (18,6 s)
 Publikacja **10:00–11:00**. Prawdziwe zdjęcia klientki z Elysium. **Upewnij się, że masz jej pisemną zgodę na publikację.**
 - Przebieg: „ONE RF SESSION · before → straight after” (profil, przejście przed→po), potem front przed→po z „PLUMPER · SMOOTHER · GLOWING”, „What happens next?” (1–2 dni zaczerwienienie znika · 4–6 tygodni kolagen dalej się buduje · 3 sesje dla najlepszego efektu), ekran podzielony przed | po, cena RF Microneedling £110 zamiast £180 („8 days left”, book by 30.11 · use until 31.01) i CTA „Send me RF”.

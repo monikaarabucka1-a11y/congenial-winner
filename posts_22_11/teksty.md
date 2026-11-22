@@ -6,7 +6,39 @@ Słowa-klucze: **LIFT** (ElastiStrom & RF Contour), **BF** (wszystkie oferty).
 
 ---
 
-## FEED NA DZIŚ: rolka „8 days left”: `rolka_8_days_left_1080x1920.mp4` (19 s)
+## FEED NA DZIŚ (główna): rolka RF przed i po: `rolka_RF_przed_po_1080x1920.mp4` (18,6 s)
+Publikacja **10:00–11:00**. Prawdziwe zdjęcia klientki z Elysium. **Upewnij się, że masz jej pisemną zgodę na publikację.**
+- Przebieg: „ONE RF SESSION · before → straight after” (profil, przejście przed→po), potem front przed→po z „PLUMPER · SMOOTHER · GLOWING”, „What happens next?” (1–2 dni zaczerwienienie znika · 4–6 tygodni kolagen dalej się buduje · 3 sesje dla najlepszego efektu), ekran podzielony przed | po, cena RF Microneedling £110 zamiast £180 („8 days left”, book by 30.11 · use until 31.01) i CTA „Send me RF”.
+- Napis ISMENIS na urządzeniu w tle rozmyty (jest poza kadrem).
+- Uczciwie pokazujemy, że zdjęcia „po” są zrobione zaraz po zabiegu, z zaczerwienieniem. Buduje to zaufanie i pasuje do informacji o rekonwalescencji 1–2 dni.
+
+### Opis rolki (EN)
+Before → straight after ONE RF microneedling session 😮
+
+Yes, there’s redness straight after, and that’s completely normal. It settles within 1–2 days. What you see straight away is plumper, smoother, glowing skin… and the best part happens over the next 4–6 weeks, as your skin keeps building new collagen.
+
+✔️ fine lines & wrinkles
+✔️ enlarged pores & uneven texture
+✔️ acne scars & loss of firmness
+✨ best results after a course of 3 sessions
+
+🖤 Black Friday: £110 (was £180), 8 days left! Book by 30 November, use any time until 31 January
+💬 Send “RF” and I’ll send you available times
+
+📍 Elysium Clinic, Bradford, West Yorkshire
+Shared with our client’s permission. Results vary from person to person.
+
+#RFMicroneedling #BeforeAndAfter #CollagenInduction #SkinTightening #BradfordSkinClinic #BradfordAesthetics #BlackFridayUK
+
+### Opis rolki (PL, krótko)
+Przed i zaraz po jednym zabiegu RF mikroigłowego 😮 Zaczerwienienie znika w 1–2 dni, a kolagen buduje się przez kolejne 4–6 tygodni. Najlepszy efekt daje seria 3 zabiegów.
+🖤 Black Friday: £110 zamiast £180, zostało 8 dni. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. Napisz RF.
+Publikujemy za zgodą klientki. Efekty są indywidualne.
+#PolkiWUK #KosmetologBradford #RFMicroneedling #BradfordSkinClinic
+
+---
+
+## FEED (zapasowa / na inny dzień): rolka „8 days left”: `rolka_8_days_left_1080x1920.mp4` (19 s)
 Zamiast R5, dopóki nie ma nagrania przed i po ElastiStrom. Publikacja **10:00–11:00**.
 - Przebieg: hook „8 DAYS LEFT”, potem RF Microneedling £110, ElastiStrom & RF £130, PorCerAmid £55, Hydrogen Pure Glow £55 (prawdziwe przed i po z 18.11, z dopiskiem „Real client · results vary”), „Book by 30 November · use until 31 January” i CTA „Send me BF”.
 - Dźwięk: tykanie zegara (odliczanie) i efekty przy wejściach tekstu, bez muzyki. Jeśli chcesz, dodaj w IG modny dźwięk na ok. 10–15% głośności.

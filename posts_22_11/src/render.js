@@ -10,6 +10,7 @@ const jobs=[
  ['s1b_0935','story1b_0935_zapytaj_mnie.png',z(1120)+'↓ QUESTION ↓</div>'],['s1b_0935','podglad_story1b_pytanie.png',ASK],
  ['s2_1300','story2_1300_dlonie.png',z(1470)+'↓ EMOJI SLIDER ↓</div>'],['s2_1300','podglad_story2_suwak.png',SLIDE],
  ['s3_1800','story3_1800_8_days_left.png',''],
+ ['s4_2000','story4_2000_ankieta_efekty.png',z(1400)+'↓ POLL ↓</div>'],['s4_2000','podglad_story4_ankieta.png','<div class="stk"><div class="qq">Which change surprised you more?</div><div class="opts"><div>JAWLINE</div><div>EYE AREA</div></div></div>'],
  ['post_8dni','post_zapasowy_8_days_left_1080x1350.png','',1350]];
 (async()=>{const b=await chromium.launch();
 for(const [n,out,stk,h] of jobs){const p=await b.newPage({viewport:{width:1080,height:h||1920}});

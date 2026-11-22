@@ -6,7 +6,35 @@ Słowa-klucze: **LIFT** (ElastiStrom & RF Contour), **BF** (wszystkie oferty).
 
 ---
 
-## FEED: opcja A, rolka R5 „przed i po” (tylko z prawdziwym materiałem z Elysium)
+## FEED NA DZIŚ: rolka „8 days left”: `rolka_8_days_left_1080x1920.mp4` (19 s)
+Zamiast R5, dopóki nie ma nagrania przed i po ElastiStrom. Publikacja **10:00–11:00**.
+- Przebieg: hook „8 DAYS LEFT”, potem RF Microneedling £110, ElastiStrom & RF £130, PorCerAmid £55, Hydrogen Pure Glow £55 (prawdziwe przed i po z 18.11, z dopiskiem „Real client · results vary”), „Book by 30 November · use until 31 January” i CTA „Send me BF”.
+- Dźwięk: tykanie zegara (odliczanie) i efekty przy wejściach tekstu, bez muzyki. Jeśli chcesz, dodaj w IG modny dźwięk na ok. 10–15% głośności.
+- Okładka: pierwsza klatka („8 DAYS LEFT”).
+
+### Opis rolki (EN)
+8 days left ⏳ Which one is your pre-Christmas treatment?
+
+✨ RF Microneedling: £110 (was £180), for fine lines, pores and scars
+✨ ElastiStrom & RF Contour: £130 (was £210), a lift without needles
+✨ PorCerAmid: £55 (was £85), ceramides for smooth, calm winter skin
+✨ Hydrogen Pure Glow: £55 (was £75), deep cleanse and real glow
+
+Book by 30 November and enjoy your treatment any time until 31 January 🎁
+
+💬 Send “BF” and I’ll help you choose + send available times
+🔖 Save this & tag a friend who needs a Christmas glow
+
+📍 Elysium Clinic, Bradford, West Yorkshire
+Before & after shared with our client’s permission. Results vary.
+
+#BlackFridayUK #BlackFridayBeauty #BradfordSkinClinic #BradfordAesthetics #WestYorkshireSkin #ChristmasGlow #ElastiStrom
+
+### Opis rolki (PL, krótko)
+Zostało 8 dni ⏳ Który zabieg wybierasz przed świętami? RF mikroigłowy £110 · ElastiStrom & RF Contour £130 · PorCerAmid £55 · Hydrogen Pure Glow £55. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. Napisz BF, pomogę wybrać 🤍
+#PolkiWUK #KosmetologBradford #BradfordSkinClinic
+
+## (Na później) rolka R5 „przed i po” (tylko z prawdziwym materiałem z Elysium)
 Potrzebne nagranie klientki **za jej pisemną zgodą**. Podeślij je, a zmontuję rolkę jak R3 (napisy, efekty, przejścia).
 
 **Plan nagrania (telefon w pionie, to samo światło, to samo miejsce, ta sama pozycja głowy):**

@@ -59,7 +59,7 @@ RF mikroigłowy czy ElastiStrom? 🤔 RF mikroigłowy (£110) na zmarszczki, por
 
 ## STORY 3 (20:30): `story3_2030_rf_czy_elastistrom.png`
 - Najpierw udostępnij P5 z naklejką „New post”, potem tę planszę.
-- Na grafice jest „LIMITED SLOTS THIS WEEK”. Gdy sprawdzisz wolne terminy, podaj liczbę, a wygeneruję wersję „ONLY X SLOTS LEFT THIS WEEK” (`node src/render.js X`).
+- Na grafice: „ONLY 3 SLOTS LEFT THIS WEEK” i terminy WED 25.11 · 12:00 / THU 26.11 · 13:00 / FRI 27.11 · 12:00. Gdy któryś się zajmie, daj znać, a zaktualizuję grafikę.
 - **Naklejka Link** (Fresha) pod „BOOK YOUR SLOT ↓” i **odliczanie** do 30.11.
 
 ## Odpowiedź na „Not sure” z ankiety (szablon)

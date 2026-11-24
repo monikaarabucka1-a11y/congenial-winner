@@ -69,3 +69,8 @@ Hi! Thank you 🤍 Those are classic signs that your skin barrier needs some sup
 
 ### Odpowiedź na „GLOW” przy pakiecie (szablon)
 Hi! 🤍 Our Glow before Christmas package combines Hydrogen Pure Glow (deep cleanse and instant glow) with PorCerAmid (ceramides for smooth, calm skin), both in one visit for £75 instead of £160. It’s the perfect pre-party treat! This week I have just one slot left: Wednesday at 12:00. Shall I book it for you?
+
+## STORY wieczorne nr 2 (20:35, zaraz po story z PorCerAmid): `story5_wieczor_pakiet_glow.png`
+- „Party-ready skin · 2 treatments, 1 visit”: 1) Hydrogen Pure Glow (deep cleanse, instant glow) + 2) PorCerAmid (ceramides seal in hydration).
+- Pakiet Glow before Christmas **£75** (worth £160, save £85) · **LAST SLOT THIS WEEK: Wed 25.11 · 12:00**.
+- **Naklejka Link** (Fresha) pod „BOOK NOW ↓”. Pod spodem „or send GLOW in DM”.

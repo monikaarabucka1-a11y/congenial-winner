@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Elysium Clinic – Instagram Mirror 60x80</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: 600mm 800mm; margin: 0 }
+  html,body{margin:0;padding:0;background:#fff}
+  svg{display:block}
+  body.preview{background:#e9e4dc}
+  .serif{font-family:'Playfair Display',serif}
+  .script{font-family:'Great Vibes',cursive}
+  .sans{font-family:'Montserrat',sans-serif}
+</style></head>
+<body>
+<!-- Units: 1 user unit = 1 mm. Mirror 600 x 800 mm. -->
+<svg id="m" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800"></svg>
+<script>
+const mode = new URLSearchParams(location.search).get('mode') || 'preview';
+const prod = mode === 'print';
+document.body.className = mode;
+const svg = document.getElementById('m');
+if (prod) { svg.setAttribute('width','600mm'); svg.setAttribute('height','800mm'); }
+else { svg.setAttribute('width','1200'); svg.setAttribute('height','1600'); }
+
+const INK = prod ? '#000' : 'url(#gold)';
+
+// 4-point sparkle star (brand motif)
+const star = (x,y,s,op=1)=>`<path transform="translate(${x} ${y}) scale(${s})" opacity="${op}" fill="${INK}"
+  d="M0,-10 C1,-2 2,-1 10,0 C2,1 1,2 0,10 C-1,2 -2,1 -10,0 C-2,-1 -1,-2 0,-10Z"/>`;
+
+const defs = `
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8a6a2f"/><stop offset=".3" stop-color="#e9cf8f"/>
+    <stop offset=".5" stop-color="#b8904a"/><stop offset=".75" stop-color="#f3dfa6"/>
+    <stop offset="1" stop-color="#9c7835"/>
+  </linearGradient>
+  <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#7d5e27"/><stop offset=".25" stop-color="#f0d699"/>
+    <stop offset=".5" stop-color="#a9823f"/><stop offset=".8" stop-color="#ecd08f"/>
+    <stop offset="1" stop-color="#6f5222"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0.6" y2="1">
+    <stop offset="0" stop-color="#3a3d42"/><stop offset=".45" stop-color="#26282c"/>
+    <stop offset="1" stop-color="#18191c"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".09"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="clip"><rect x="14" y="14" width="572" height="772" rx="26"/></clipPath>
+</defs>`;
+
+// ---------- Mirror body (preview only) ----------
+const body = prod ? `
+  <rect x="0.5" y="0.5" width="599" height="799" rx="40" fill="none" stroke="#e5007e" stroke-width="0.3"/>
+` : `
+  <rect x="0" y="0" width="600" height="800" rx="40" fill="url(#frame)"/>
+  <rect x="7" y="7" width="586" height="786" rx="34" fill="none" stroke="#5a431a" stroke-width="1.2" opacity=".6"/>
+  <g clip-path="url(#clip)">
+    <rect x="14" y="14" width="572" height="772" fill="url(#glass)"/>
+    <rect x="-200" y="-100" width="260" height="1100" fill="url(#sheen)" transform="rotate(-28 300 400)"/>
+    <rect x="260" y="-100" width="90" height="1100" fill="url(#sheen)" transform="rotate(-28 300 400)"/>
+  </g>
+  <!-- LED halo: frosted backlit strip -->
+  <rect x="34" y="34" width="532" height="732" rx="18" fill="none" stroke="#fff3d6" stroke-width="5" filter="url(#glow)" opacity=".85"/>
+`;
+
+// ---------- Vinyl / etched artwork (both modes) ----------
+const ledLine = prod
+  ? `<rect x="34" y="34" width="532" height="732" rx="18" fill="none" stroke="#000" stroke-width="5"/>`
+  : '';
+
+const art = `
+<g id="vinyl">
+  ${ledLine}
+  <!-- LOGO BLOCK (top) -->
+  <text x="300" y="118" text-anchor="middle" class="script" font-size="64" fill="${INK}">E</text>
+  <text x="300" y="160" text-anchor="middle" class="serif" font-weight="600" font-size="40" letter-spacing="3" fill="${INK}">ELYSIUM</text>
+  <line x1="208" y1="176" x2="250" y2="176" stroke="${INK}" stroke-width="1"/>
+  <text x="300" y="180" text-anchor="middle" class="sans" font-weight="500" font-size="11" letter-spacing="8" fill="${INK}">CLINIC</text>
+  <line x1="350" y1="176" x2="392" y2="176" stroke="${INK}" stroke-width="1"/>
+  ${star(300,194,0.55)}
+  <text x="300" y="214" text-anchor="middle" class="sans" font-weight="500" font-size="8" letter-spacing="5" fill="${INK}">BRADFORD</text>
+
+  <!-- sparkles in the clear area (kept small so the reflection stays clean) -->
+  ${star(92,268,1.1)} ${star(116,300,0.5,.8)}
+  ${star(512,560,1.0)} ${star(486,592,0.45,.8)}
+
+  <!-- TAGLINE (bottom) -->
+  <text x="300" y="632" text-anchor="middle" class="script" font-size="50" fill="${INK}">Your glow-up starts here</text>
+  <text x="300" y="665" text-anchor="middle" class="sans" font-weight="600" font-size="10" letter-spacing="6" fill="${INK}">SNAP  ·  TAG  ·  GLOW</text>
+
+  <!-- Instagram handle -->
+  <g transform="translate(205 690)">
+    <rect x="0" y="0" width="24" height="24" rx="7" fill="none" stroke="${INK}" stroke-width="2.4"/>
+    <circle cx="12" cy="12" r="5.6" fill="none" stroke="${INK}" stroke-width="2.4"/>
+    <circle cx="18.6" cy="5.4" r="1.6" fill="${INK}"/>
+  </g>
+  <text x="237" y="709" class="sans" font-weight="500" font-size="19" letter-spacing="1" fill="${INK}">@elysiumclinic</text>
+  <text x="300" y="740" text-anchor="middle" class="sans" font-weight="500" font-size="9" letter-spacing="4" fill="${INK}">#ELYSIUMGLOW</text>
+</g>`;
+
+svg.innerHTML = defs + body + art;
+</script>
+</body></html>

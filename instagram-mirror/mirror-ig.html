@@ -18,6 +18,7 @@ const q = new URLSearchParams(location.search);
 const prod  = q.get('mode') === 'print';
 const dark  = q.get('theme') === 'dark';
 const svg = document.getElementById('m');
+const part = q.get('part'); // 'top' | 'bottom' | null
 
 // Preview gets a wall around the mirror; print is the exact 600x800 sheet.
 const PAD = prod ? 0 : 90;
@@ -153,6 +154,16 @@ if (!prod) {
 }
 out += topPanel + botPanel + `</g>`;
 out += `<rect x="${prod?0.3:0}" y="${prod?0.3:0}" width="${prod?599.4:600}" height="${prod?799.4:800}" rx="${R}" fill="none" stroke="${prod?'#e5007e':'#cfc6b6'}" stroke-width="${prod?0.5:2}"/>`;
+if (prod && part) {
+  // Separate strip: drop the full-sheet marks, keep artwork, add a cut line around the strip
+  out = defs + `<g clip-path="url(#shape)">` + topPanel + botPanel + `</g>`;
+  const y0 = part==='top' ? 0 : BOT, h = part==='top' ? TOP : 800-BOT;
+  out += `<rect x="0.25" y="${y0+0.25}" width="599.5" height="${h-0.5}" fill="none" stroke="#e5007e" stroke-width="0.5"/>`;
+  svg.setAttribute('viewBox', `0 ${y0} 600 ${h}`);
+  svg.setAttribute('height', h+'mm');
+  document.title = `strip ${part} 600x${h}`;
+  const st=document.createElement('style'); st.textContent=`@page{size:600mm ${h}mm;margin:0}`; document.head.appendChild(st);
+}
 svg.innerHTML = out;
 const placeStar = ()=>{ const b=document.getElementById('cap').getBBox();
   document.getElementById('capstar').setAttribute('transform',`translate(${b.x+b.width+10} ${b.y+b.height*0.62})`); };

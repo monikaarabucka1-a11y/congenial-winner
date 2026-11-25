@@ -30,3 +30,23 @@ Przed i zaraz po jednym zabiegu RF mikroigłowego 😮 Zaczerwienienie znika w 1
 🖤 £110 zamiast £180, zostało 5 dni. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. Napisz RF.
 Publikujemy za zgodą klientki. Efekty są indywidualne.
 #PolkiWUK #KosmetologBradford #RFMicroneedling #BradfordSkinClinic
+
+---
+
+## STORY 1 (8:30): `story1_0830_rf_recovery.png`
+- „Straight after RF 👀 · This redness is completely normal and settles within 1–2 days” na zdjęciu klientki zaraz po zabiegu.
+- **Naklejka Pytanie** w miejscu „QUESTION ↓”: „Ask me about RF recovery 🤍”. Odpowiedzi możesz udostępniać w ciągu dnia.
+- Podgląd: `podglad_story1_pytanie.png`.
+
+## STORY 2 (13:00): `story2_1300_rf_quiz.png`
+- „When do results peak?” i zdjęcia przed | zaraz po (pierwszy kolaż).
+- **Naklejka Quiz** w miejscu „QUIZ ↓”: „When do RF results peak?”, odpowiedzi A · After 1 day / **B · After 4–6 weeks** (poprawna).
+- Podgląd: `podglad_story2_quiz.png`.
+
+## STORY 3 (20:30): `story3_2030_rf_oferta.png`
+- Najpierw udostępnij rolkę P6 z naklejką „New post”, potem tę planszę.
+- „5 days left”, przed | zaraz po (drugi kolaż), RF Microneedling £110 zamiast £180, „Results peak in 4–6 weeks · just in time for Christmas”.
+- Na razie „LIMITED SLOTS LEFT”. Gdy podasz terminy, wpiszę je (`node src/render.js "TEKST"`).
+- **Naklejka Link** (Fresha) pod „BOOK YOUR SLOT ↓” i **odliczanie** do 30.11.
+
+Zdjęcia z kolaży są przycięte, bez znaku wodnego PIC•COLLAGE. Dopisek „Real client · shared with permission · results vary” jest na każdej grafice.

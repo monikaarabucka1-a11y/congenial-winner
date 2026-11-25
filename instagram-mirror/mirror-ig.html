@@ -155,14 +155,31 @@ if (!prod) {
 out += topPanel + botPanel + `</g>`;
 out += `<rect x="${prod?0.3:0}" y="${prod?0.3:0}" width="${prod?599.4:600}" height="${prod?799.4:800}" rx="${R}" fill="none" stroke="${prod?'#e5007e':'#cfc6b6'}" stroke-width="${prod?0.5:2}"/>`;
 if (prod && part) {
-  // Separate strip: drop the full-sheet marks, keep artwork, add a cut line around the strip
-  out = defs + `<g clip-path="url(#shape)">` + topPanel + botPanel + `</g>`;
+  // Professional strip print file: trim = net size, 3 mm bleed, crop marks + slug info outside bleed.
+  const BL = 3, SLUG = 18;            // bleed, margin around trim for marks (mm)
   const y0 = part==='top' ? 0 : BOT, h = part==='top' ? TOP : 800-BOT;
-  out += `<rect x="0.25" y="${y0+0.25}" width="599.5" height="${h-0.5}" fill="none" stroke="#e5007e" stroke-width="0.5"/>`;
-  svg.setAttribute('viewBox', `0 ${y0} 600 ${h}`);
-  svg.setAttribute('height', h+'mm');
-  document.title = `strip ${part} 600x${h}`;
-  const st=document.createElement('style'); st.textContent=`@page{size:600mm ${h}mm;margin:0}`; document.head.appendChild(st);
+  const name = part==='top' ? 'GÓRNY pasek / TOP strip' : 'DOLNY pasek / BOTTOM strip';
+  const K = '#000', sw = 0.25, off = BL, len = 10;
+  // crop marks: start 3 mm away from the trim corner (outside bleed), 10 mm long
+  const marks = [[0,y0],[600,y0],[0,y0+h],[600,y0+h]].map(([x,y])=>{
+    const dx = x===0?-1:1, dy = y===y0?-1:1;
+    return `<line x1="${x+dx*off}" y1="${y}" x2="${x+dx*(off+len)}" y2="${y}" stroke="${K}" stroke-width="${sw}"/>
+            <line x1="${x}" y1="${y+dy*off}" x2="${x}" y2="${y+dy*(off+len)}" stroke="${K}" stroke-width="${sw}"/>`;
+  }).join('');
+  // centre marks on each side
+  const reg = (cx,cy)=>`<circle cx="${cx}" cy="${cy}" r="2.2" fill="none" stroke="${K}" stroke-width="${sw}"/>
+    <line x1="${cx-3.5}" y1="${cy}" x2="${cx+3.5}" y2="${cy}" stroke="${K}" stroke-width="${sw}"/>
+    <line x1="${cx}" y1="${cy-3.5}" x2="${cx}" y2="${cy+3.5}" stroke="${K}" stroke-width="${sw}"/>`;
+  const regs = reg(300,y0-BL-7) + reg(300,y0+h+BL+7) + reg(-BL-7,y0+h/2) + reg(600+BL+7,y0+h/2);
+  const info = `<text x="0" y="${y0+h+BL+12}" class="ui" font-size="3" fill="${K}">ELYSIUM Clinic · Instagram mirror 600×800 mm · ${name} · wersja biała</text>
+    <text x="600" y="${y0+h+BL+12}" text-anchor="end" class="ui" font-size="3" fill="${K}">Format netto (linie cięcia) ${600}×${h} mm · spad ${BL} mm · brutto ${600+2*BL}×${h+2*BL} mm · skala 1:1</text>`;
+  out = defs
+      + `<rect x="${-BL}" y="${y0-BL}" width="${600+2*BL}" height="${h+2*BL}" fill="${C.panel}"/>`
+      + (topPanel + botPanel).replace(/<line x1="0" y1="(614\.5|615\.5|154\.5|155\.5)"[^>]*\/>/g,'')  // no hairline on the trim edge
+      + marks + regs + info;
+  svg.setAttribute('viewBox', `${-SLUG} ${y0-SLUG} ${600+2*SLUG} ${h+2*SLUG}`);
+  svg.setAttribute('width', (600+2*SLUG)+'mm'); svg.setAttribute('height', (h+2*SLUG)+'mm');
+  const st=document.createElement('style'); st.textContent=`@page{size:${600+2*SLUG}mm ${h+2*SLUG}mm;margin:0}`; document.head.appendChild(st);
 }
 svg.innerHTML = out;
 const placeStar = ()=>{ const b=document.getElementById('cap').getBBox();

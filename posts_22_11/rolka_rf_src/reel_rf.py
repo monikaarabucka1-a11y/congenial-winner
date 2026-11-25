@@ -99,7 +99,7 @@ def overlay(c, n, rel):
         E.paste(c, E.text_sprite('Same skin. One session.', F('pf700i.ttf', 70), E.WHITE, stroke=7), W / 2, 330, pop(k - 4), fade(k - 4))
         return
     if n == 'price':
-        E.paste(c, E.pill_sprite('BLACK FRIDAY · 8 DAYS LEFT', F('mont800.ttf', 38)), W / 2, 450, pop(k - 1), fade(k - 1))
+        E.paste(c, E.pill_sprite('BLACK FRIDAY · 5 DAYS LEFT', F('mont800.ttf', 38)), W / 2, 450, pop(k - 1), fade(k - 1))
         E.paste(c, E.text_sprite('RF MICRONEEDLING', F('mont800.ttf', 92), E.WHITE, stroke=9), W / 2, 640, pop(k - 4), fade(k - 4))
         ps = E.text_sprite('£110', F('pf800.ttf', 250), 'gold', stroke=9); so = E.text_sprite('£180', F('mont600.ttf', 76), (200, 185, 165), stroke=6)
         tot = ps.width + so.width - 30; px = W / 2 - tot / 2 + ps.width / 2; ox = px + ps.width / 2 + so.width / 2 - 30

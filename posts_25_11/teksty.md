@@ -3,7 +3,7 @@
 Feed: **19:00–20:00**. Stories: **8:30 · 13:00 · 20:30**. Słowo-klucz: **RF**. Zostało **5 dni** Black Friday.
 
 ## FEED: rolka P6 RF przed i po: `rolka_P6_RF_przed_po_1080x1920.mp4`
-Ta sama rolka co 22.11, ale z planszą „BLACK FRIDAY · 5 DAYS LEFT”.
+Nowa rolka z dzisiejszych zdjęć RF (dwie pary przed i zaraz po, bez znaku wodnego PIC•COLLAGE): „ONE RF SESSION · before → straight after”, „PLUMPER · SMOOTHER · GLOWING”, „What happens next?” (1–2 dni / 4–6 tygodni / 3 sesje), podzielony ekran „Same skin. One session.”, cena £110 zamiast £180 z „BLACK FRIDAY · 5 DAYS LEFT” i CTA „Send me RF”.
 
 ### Opis (EN)
 Before → straight after ONE RF microneedling session 😮

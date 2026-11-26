@@ -56,7 +56,7 @@ Results vary from person to person.
 
 ## STORY 3 (20:30): `story3_2030_party_oferta.png`
 - Najpierw udostępnij rolkę z naklejką „New post”, potem tę planszę.
-- „Party-ready skin” i 4 opcje z cenami. Na razie „LIMITED SLOTS LEFT”. Podaj terminy, a wpiszę je (`node src/render.js "TEKST"`).
+- Luksusowy styl magazynu jak rano: „Black Friday · 4 days left · Party-ready skin”, zdjęcie kobiety przed imprezą, 4 opcje z cenami czarnym tekstem. Na razie „LIMITED SLOTS LEFT”. Podaj terminy, a wpiszę je (`node src/render.js "TEKST"`).
 - **Naklejka Link** (Fresha) pod „BOOK YOUR SLOT ↓” i **odliczanie** do 30.11.
 
 ## Odpowiedź na „PARTY” (szablon)

@@ -7,7 +7,7 @@ const SLIDE='<div class="stk" style="top:1390px"><div class="qq">How party-ready
 const LUXPOLL='<div class="stk"><div class="qq">When is your Christmas party?</div><div class="o">This weekend 🥂</div><div class="o">Next week</div><div class="o">Later in December</div></div>';
 const jobs=[['s1_lux','story1_0830_party_poll.png','<div class="zone" style="top:1560px">↓ POLL ↓</div>'],['s1_lux','podglad_story1_ankieta.png',LUXPOLL],
  ['s2_lux','story2_1300_party_prep.png','<div class="zone" style="top:1610px">↓ EMOJI SLIDER ↓</div>'],['s2_lux','podglad_story2_suwak.png','<div class="stk"><div class="qq">How party-ready is your skin?</div><div class="bar"><i>✨</i></div></div>'],
- ['s3_2030','story3_2030_party_oferta.png','']];
+ ['s3_lux','story3_2030_party_oferta.png','']];
 (async()=>{const b=await chromium.launch();
 for(const [n,out,stk] of jobs){const p=await b.newPage({viewport:{width:1080,height:1920}});
  const tmp=path.join(D,'_'+n+'.html');fs.writeFileSync(tmp,fs.readFileSync(path.join(D,n+'.html'),'utf8').replace('__STK__',stk).replace('__SLOTS__',SL));

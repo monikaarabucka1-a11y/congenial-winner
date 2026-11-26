@@ -44,7 +44,7 @@ Results vary from person to person.
 ---
 
 ## STORY 1 (8:30): `story1_0830_party_poll.png`
-- Wersja luksusowa i jasna: tło kość słoniowa/szampan, czarny tekst i czarne logo, zdjęcie w złotym łuku ze złotą kokardą, złote bombki na nitkach i złote listki. „Good morning from Elysium · Party season is here”.
+- Wersja luksusowa i jasna: tło kość słoniowa/szampan, czarny tekst i czarne logo, zdjęcie jako pełne tło (bez ramki), złote i perłowe bombki na nitkach, złoty pył i cienka złota ramka. „Good morning from Elysium · Party season is here”.
 - **Naklejka Ankieta** w miejscu „POLL ↓”: „When is your Christmas party?”, odpowiedzi **This weekend 🥂 / Next week / Later in December**.
 - Każdej osobie, która zagłosuje, możesz odpisać, który zabieg pasuje do jej daty (jak w rolce).
 - Podgląd: `podglad_story1_ankieta.png`.

@@ -1,59 +1,63 @@
-# Czw 26.11: Real results (karuzela) + 3 stories
+# Czw 26.11: temat dnia „Skóra gotowa na świąteczną imprezę 🎄”. Rolka + 3 stories
 
-Feed: **19:00–20:00**. Stories: **8:30 · 13:00 · 20:30**. Zostały **4 dni** Black Friday. Słowo-klucz: **BF**.
+Feed: **19:00–20:00**. Stories: **8:30 · 13:00 · 20:30**. Zostały **4 dni** Black Friday. Słowo-klucz: **PARTY** (+ data imprezy).
 Grafiki tylko po angielsku.
-
-Plan przewidywał rolkę R7 we współpracy z @luxe_liene („New hair + fresh skin in one afternoon”). Brakuje materiału z Liene. Gdy podeślesz zdjęcia lub nagranie, zrobię rolkę (np. na weekend).
 
 ---
 
-## POST: karuzela „Real results” `post_karuzela/slajd_1…6.png` (1080×1350)
-1. „Real results. Real clients.”: 3 zdjęcia „po”, 4 days left
-2. RF Microneedling: przed / zaraz po, £110 (było £180)
-3. ElastiStrom & RF Contour: okolica oka przed / po (sam detal), £130 (było £210)
-4. Hydrogen Pure Glow: przed / po, £55 (było £75)
-5. Menu cen BF (+ pakiet Glow before Christmas £75)
-6. „Which result would you love?” · Send “BF” · ends Monday 30.11 at midnight
+## ROLKA: `rolka_party_what_to_book_1080x1920.mp4` (19 s)
+1. Hook: „CHRISTMAS PARTY? here’s what to book & when” (salon, dzwoneczki, uderzenie basu) · „Black Friday · 4 days left”
+2. „PARTY IN 4+ WEEKS?” → RF Microneedling: results peak in 4–6 weeks · £110 (było £180)
+3. „PARTY NEXT WEEK?” → ElastiStrom & RF: instant lift, no needles · £130 (było £210)
+4. „PARTY THIS WEEKEND?” → Hydrogen Pure Glow: instant glow, zero downtime · £55 (było £75)
+5. „Best of both”: Glow before Christmas (Hydrogen Pure Glow + PorCerAmid) · £75 (wartość £160)
+6. CTA: „SEND ME ‘PARTY’ and your party date · I’ll plan your glow” · Black Friday ends Monday 30.11
 
 ### Opis (EN)
-Real results. Real clients. No filters. ✨ Swipe to see what one treatment can do 👉
+Christmas party coming up? 🎄 Here’s exactly what to book, and when 👇
 
-💫 RF Microneedling: plumper, smoother skin straight after, with collagen building for 4–6 weeks (£110, was £180)
-💫 ElastiStrom & RF Contour: a smoother-looking eye area and lifted contour, no needles (£130, was £210)
-💫 Hydrogen Pure Glow: clearer pores and an instant, healthy glow (£55, was £75)
-💫 PorCerAmid: ceramides for smooth, calm winter skin (£55, was £85)
-🎄 Glow before Christmas package: Hydrogen Pure Glow + PorCerAmid (£75)
+🥂 Party in 4+ weeks → RF Microneedling (£110, was £180)
+Collagen builds over 4–6 weeks, so your results peak just in time.
 
-⏳ Only 4 days left: Black Friday ends Monday 30 November at midnight. Book now and use any time until 31 January.
+✨ Party next week → ElastiStrom & RF Contour (£130, was £210)
+An instant lift for your jawline & neck. No needles, no downtime.
 
-💬 Which result would you love? Send me “BF” and I’ll match you with the right treatment
-🔖 Save this post
+💫 Party this weekend → Hydrogen Pure Glow (£55, was £75)
+Deep cleanse + instant glow, with no redness. Go straight from the clinic to the party.
+
+🎁 Best of both: Glow before Christmas package (£75): Hydrogen Pure Glow + PorCerAmid in one visit.
+
+⏳ Black Friday prices end Monday 30 November at midnight. Book now, use any time until 31 January.
+
+💬 Send me “PARTY” + your party date and I’ll plan your perfect glow 🤍
+🔖 Save this & send it to your party bestie
 
 📍 Elysium Clinic, Bradford, West Yorkshire
-Shared with our clients’ permission. Results vary from person to person.
+Results vary from person to person.
 
-#BeforeAndAfter #RealResults #RFMicroneedling #ElastiStrom #HydrogenPureGlow #BradfordSkinClinic #BradfordAesthetics #BlackFridayUK
+#ChristmasParty #PartySkin #ChristmasGlow #HydrogenPureGlow #RFMicroneedling #ElastiStrom #BradfordSkinClinic #BlackFridayUK
 
 ### Opis (PL, krótko)
-Prawdziwe efekty, prawdziwe klientki, bez filtrów ✨ RF mikroigłowy £110 · ElastiStrom & RF Contour £130 · Hydrogen Pure Glow £55 · PorCerAmid £55 · pakiet Glow before Christmas £75. Zostały 4 dni, a Black Friday kończy się w poniedziałek 30.11 o północy. Z zabiegu skorzystasz do końca stycznia. Napisz BF 🤍
-Publikujemy za zgodą klientek. Efekty są indywidualne.
+Świąteczna impreza w planach? 🎄 Impreza za 4+ tygodnie: RF mikroigłowy £110, efekt będzie najlepszy na czas. Za tydzień: ElastiStrom & RF £130, natychmiastowy lifting bez igieł. W ten weekend: Hydrogen Pure Glow £55, blask od razu. Albo pakiet Glow before Christmas £75. Black Friday do poniedziałku 30.11. Napisz PARTY i datę imprezy, a dobiorę zabieg 🤍
 #PolkiWUK #KosmetologBradford #BradfordSkinClinic
 
 ---
 
-## STORY 1 (8:30): `story1_0830_team.png`
-- „Meet the team · Hair & skin under one roof · Fresh hair and glowing skin, all in one afternoon” na tle stanowisk fryzjerskich.
-- **Naklejka Ankieta** w miejscu „POLL ↓”: „Hair or skin first?”, odpowiedzi **Hair ✂️ / Skin ✨**.
-- **Oznacz @luxe_liene** (naklejka Wzmianka), żeby relację zobaczyli też jej obserwujący.
+## STORY 1 (8:30): `story1_0830_party_poll.png`
+- „Party season is here 🎄” na zimowym zdjęciu.
+- **Naklejka Ankieta** w miejscu „POLL ↓”: „When is your Christmas party?”, odpowiedzi **This weekend 🥂 / Next week / Later in December**.
+- Każdej osobie, która zagłosuje, możesz odpisać, który zabieg pasuje do jej daty (jak w rolce).
 - Podgląd: `podglad_story1_ankieta.png`.
 
-## STORY 2 (13:00): `story2_1300_vascular_calm.png`
-- „Redness or broken capillaries?” · Vascular Calm from £40 · „Targets visible redness & thread veins for a calmer, more even complexion”.
-- **Naklejka Pytanie** w miejscu „QUESTION ↓”: „Acne or redness? Ask me 🤍”.
-- Podgląd: `podglad_story2_pytanie.png`.
-- ⚠️ Sprawdź, czy opis Vascular Calm się zgadza (na czym polega zabieg). Poprawię, jeśli trzeba.
+## STORY 2 (13:00): `story2_1300_party_prep.png`
+- „3 golden rules before the party”: bez nowych kosmetyków w tygodniu przed imprezą, zabieg na blask 1–3 dni przed, nawilżanie od środka i z zewnątrz.
+- **Naklejka Suwak emoji** ✨ w miejscu „EMOJI SLIDER ↓”: „How party-ready is your skin?”.
+- Podgląd: `podglad_story2_suwak.png`.
 
-## STORY 3 (20:30): `story3_2030_4_days_left.png`
-- Najpierw udostępnij karuzelę z naklejką „New post”, potem tę planszę.
-- „4 DAYS LEFT” i menu cen BF z pakietem. Na razie „LIMITED SLOTS LEFT”. Podaj terminy, a wpiszę je (`node src/render.js "TEKST"`).
+## STORY 3 (20:30): `story3_2030_party_oferta.png`
+- Najpierw udostępnij rolkę z naklejką „New post”, potem tę planszę.
+- „Party-ready skin” i 4 opcje z cenami. Na razie „LIMITED SLOTS LEFT”. Podaj terminy, a wpiszę je (`node src/render.js "TEKST"`).
 - **Naklejka Link** (Fresha) pod „BOOK YOUR SLOT ↓” i **odliczanie** do 30.11.
+
+## Odpowiedź na „PARTY” (szablon)
+Hi! 🎄 Thank you! When is your party? If it’s this weekend, I’d recommend Hydrogen Pure Glow (£55) or our Glow before Christmas package (£75) for an instant glow with no redness. Next week: ElastiStrom & RF Contour (£130) for an instant lift. If it’s 4+ weeks away, RF microneedling (£110) will give you peak results just in time. Shall I send you available times?

@@ -6,7 +6,7 @@ const POLL='<div class="stk" style="top:1270px"><div class="qq">When is your Chr
 const SLIDE='<div class="stk" style="top:1390px"><div class="qq">How party-ready is your skin?</div><div class="bar"><i>✨</i></div></div>';
 const LUXPOLL='<div class="stk"><div class="qq">When is your Christmas party?</div><div class="o">This weekend 🥂</div><div class="o">Next week</div><div class="o">Later in December</div></div>';
 const jobs=[['s1_lux','story1_0830_party_poll.png','<div class="zone" style="top:1560px">↓ POLL ↓</div>'],['s1_lux','podglad_story1_ankieta.png',LUXPOLL],
- ['s2_1300','story2_1300_party_prep.png',z(1430)+'↓ EMOJI SLIDER ↓</div>'],['s2_1300','podglad_story2_suwak.png',SLIDE],
+ ['s2_lux','story2_1300_party_prep.png','<div class="zone" style="top:1610px">↓ EMOJI SLIDER ↓</div>'],['s2_lux','podglad_story2_suwak.png','<div class="stk"><div class="qq">How party-ready is your skin?</div><div class="bar"><i>✨</i></div></div>'],
  ['s3_2030','story3_2030_party_oferta.png','']];
 (async()=>{const b=await chromium.launch();
 for(const [n,out,stk] of jobs){const p=await b.newPage({viewport:{width:1080,height:1920}});

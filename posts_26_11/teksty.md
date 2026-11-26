@@ -44,13 +44,13 @@ Results vary from person to person.
 ---
 
 ## STORY 1 (8:30): `story1_0830_party_poll.png`
-- Wersja luksusowa i jasna: tło kość słoniowa/szampan, czarny tekst i czarne logo, zdjęcie jako pełne tło (bez ramki), złote i perłowe bombki na nitkach, złoty pył i cienka złota ramka. „Good morning from Elysium · Party season is here”.
+- Styl okładki magazynu: u góry jasny panel z satyną i czarnym tekstem („Good morning from Elysium · Party season is here”, „is here” złotą folią), na środku zdjęcie kobiety przed imprezą (bordowe tło) między złotymi liniami, na dole jasny pas z czarnym logo. Złote i perłowe bombki, złoty pył.
 - **Naklejka Ankieta** w miejscu „POLL ↓”: „When is your Christmas party?”, odpowiedzi **This weekend 🥂 / Next week / Later in December**.
 - Każdej osobie, która zagłosuje, możesz odpisać, który zabieg pasuje do jej daty (jak w rolce).
 - Podgląd: `podglad_story1_ankieta.png`.
 
 ## STORY 2 (13:00): `story2_1300_party_prep.png`
-- „3 golden rules before the party”: bez nowych kosmetyków w tygodniu przed imprezą, zabieg na blask 1–3 dni przed, nawilżanie od środka i z zewnątrz.
+- Ten sam luksusowy styl: „3 golden rules before the party”, zdjęcie trzech dziewczyn na imprezie, pod spodem 3 zasady (bez nowych kosmetyków tydzień przed, zabieg na blask 1–3 dni przed, nawilżanie), czarne logo.
 - **Naklejka Suwak emoji** ✨ w miejscu „EMOJI SLIDER ↓”: „How party-ready is your skin?”.
 - Podgląd: `podglad_story2_suwak.png`.
 

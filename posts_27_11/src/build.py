@@ -46,7 +46,7 @@ open('s2.html','w').write(story('party_girls.jpg',470,600,'center -300px/1080px 
  '<div style="margin-top:34px"><span class="chip">SEND “BF” · I REPLY WITHIN 1 HOUR</span></div></div>',
  '<div class="zone" style="top:1680px">↓ LINK ↓</div>'))
 # 20:30 — ends Monday + menu
-open('s3.html','w').write(story('salon.jpg',470,380,'30% 55%/1500px auto',
+open('s3.html','w').write(story('gabinet.jpg',470,380,'center 62%/1080px auto',
  '<div class="k">BLACK FRIDAY · ENDS MONDAY AT MIDNIGHT</div><div class="k2"></div><div class="new">▶ NEW REEL · LAST WEEKEND</div><div class="h">Last <em>chance</em></div>',
  '<div class="body" style="top:880px">'+ROWS+'<div class="txt" style="margin-top:22px;font-size:26px">Book by <b>30.11</b> · use until <b>31.01</b></div></div>',
  '<div class="zone" style="top:1620px">BOOK NOW ↓</div><div class="zone" style="top:1725px;font-size:18px;letter-spacing:.22em;color:#5a4a3a">or send “BF” in DM · I reply within 1 hour</div>'))

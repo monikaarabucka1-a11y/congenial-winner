@@ -19,7 +19,7 @@ def kb(base, p, z0=1.0, z1=1.08, dx=0, dy=0):
     M = np.float32([[s, 0, W / 2 - s * cx], [0, s, H / 2 - s * cy]])
     return cv2.warpAffine(arr, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 def dark(f, a): return (f.astype(np.float32) * a).astype(np.uint8)
-B = {'hook': cover(load('salon.jpg'), .35, .5), 'booked': cover(load('party_girls.jpg'), .5, .3), 'but': cover(load('party_woman.jpg'), .5, .2),
+B = {'hook': cover(load('gabinet.jpg'), .45, .5), 'booked': cover(load('party_girls.jpg'), .5, .3), 'but': cover(load('party_woman.jpg'), .5, .2),
      'rf': cover(load('rf_photo.jpg'), .5, .45), 'lift': cover(load('k2.jpg'), .5, .55), 'cer': cover(load('ceramide_caps.jpg'), .45, .5),
      'glow': cover(load('glow_a.jpg'), .5, .4), 'pkg': cover(load('party_woman.jpg'), .5, .2)}
 SEGS = [('hook', 2.6), ('booked', 2.6), ('but', 2.4), ('rf', 2.2), ('lift', 2.2), ('cer', 2.2), ('glow', 2.2), ('pkg', 2.4), ('when', 2.6), ('cta', 3.0)]

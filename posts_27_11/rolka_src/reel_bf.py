@@ -19,7 +19,7 @@ def kb(base, p, z0=1.0, z1=1.08, dx=0, dy=0):
     M = np.float32([[s, 0, W / 2 - s * cx], [0, s, H / 2 - s * cy]])
     return cv2.warpAffine(arr, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 def dark(f, a): return (f.astype(np.float32) * a).astype(np.uint8)
-B = {'hook': cover(load('gabinet.jpg'), .45, .5), 'booked': cover(load('party_girls.jpg'), .5, .3), 'but': cover(load('party_woman.jpg'), .5, .2),
+B = {'hook': cover(load('gabinet.jpg'), .45, .5), 'booked': cover(load('rf_blue.jpg'), .5, .1), 'but': cover(load('party_woman.jpg'), .5, .2),
      'rf': cover(load('rf_photo.jpg'), .5, .45), 'lift': cover(load('k2.jpg'), .5, .55), 'cer': cover(load('ceramide_caps.jpg'), .45, .5),
      'glow': cover(load('glow_a.jpg'), .5, .4), 'pkg': cover(load('party_woman.jpg'), .5, .2)}
 SEGS = [('hook', 2.6), ('booked', 2.6), ('but', 2.4), ('rf', 2.2), ('lift', 2.2), ('cer', 2.2), ('glow', 2.2), ('pkg', 2.4), ('when', 2.6), ('cta', 3.0)]
@@ -36,7 +36,7 @@ def lift_(k, d=6): return (1 - E.out_cubic(k / d)) * 26
 def bg(n, rel, dur):
     p = rel / dur
     if n == 'hook': return dark(kb(B['hook'], p, 1.0, 1.12), .4)
-    if n == 'booked': return dark(kb(B['booked'], p, 1.0, 1.08), .55)
+    if n == 'booked': return kb(B['booked'], p, 1.0, 1.06)
     if n == 'but': return dark(cv2.GaussianBlur(kb(B['but'], p, 1.05, 1.1), (0, 0), 14), .4)
     if n in ROWS: return kb(B[n], p, 1.0, 1.08, 0, -40)
     if n == 'when': return dark(cv2.GaussianBlur(kb(B['glow'], p, 1.05, 1.1), (0, 0), 16), .38)
@@ -59,9 +59,9 @@ def overlay(c, n, rel):
         E.paste(c, E.text_sprite('FRIDAY', F('mont800.ttf', 190), 'gold', stroke=10), W / 2, 1070, pop(k - 2), fade(k - 2))
         return
     if n == 'booked':
-        E.paste(c, E.text_sprite('FULLY BOOKED', F('mont800.ttf', 120), E.WHITE, stroke=10), W / 2, 760, pop(k - 1), fade(k - 1))
-        E.paste(c, E.text_sprite('this weekend', F('pf700i.ttf', 90), 'gold', stroke=7), W / 2, 900, pop(k - 6), fade(k - 6))
-        E.paste(c, E.text_sprite('thank you, you’re amazing', F('mont600.ttf', 46), E.CREAM, stroke=6), W / 2, 1030 + lift_(k - 14), 1, fade(k - 14, 4))
+        E.paste(c, E.text_sprite('THANK YOU', F('mont600.ttf', 48), E.GOLD, stroke=6), W / 2, 260, pop(k - 1), fade(k - 1))
+        E.paste(c, E.text_sprite('Fully booked', F('pf800.ttf', 150), 'gold', stroke=9), W / 2, 420, pop(k - 4), fade(k - 4))
+        E.paste(c, E.text_sprite('this weekend', F('pf700i.ttf', 100), E.CREAM, stroke=7), W / 2, 570 + lift_(k - 10), 1, fade(k - 10, 4))
         return
     if n == 'but':
         E.paste(c, E.text_sprite('BUT…', F('mont800.ttf', 150), 'gold', stroke=10), W / 2, 700, pop(k - 1), fade(k - 1))

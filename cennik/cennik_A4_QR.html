@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Elysium Price List</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 210mm; height: 297mm; }
+body { background: #0f0c0a; color: #efe6d8; font-family: 'Montserrat', sans-serif;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 120mm 90mm at 50% 8%, #2a2018 0%, #0f0c0a 70%); }
+.frame { position: absolute; inset: 7mm; border: 0.35mm solid #b8925a; border-radius: 3mm; }
+.frame::after { content: ""; position: absolute; inset: 1.4mm; border: 0.15mm solid rgba(184,146,90,.45); border-radius: 2mm; }
+.inner { position: absolute; inset: 7mm; padding: 12mm; display: flex; flex-direction: column; }
+.logo { display: block; margin: 0 auto; width: 88mm; mix-blend-mode: screen; }
+.title { text-align: center; font-family: 'Playfair Display', serif; color: #d9b67a;
+  letter-spacing: .5em; text-transform: uppercase; font-size: 12pt; margin-top: 2mm; padding-left: .5em; }
+.orn { display:flex; align-items:center; justify-content:center; gap: 3mm; color:#b8925a; margin: 2.5mm 0 3mm; font-size: 8pt; }
+.orn::before, .orn::after { content:""; height: .25mm; width: 28mm; background: linear-gradient(90deg, transparent, #b8925a); }
+.orn::after { background: linear-gradient(270deg, transparent, #b8925a); }
+h2 { font-family: 'Playfair Display', serif; font-weight: 600; color: #d9b67a; font-size: 12pt;
+  letter-spacing: .14em; text-transform: uppercase; margin: 12Tmm 0 12Bmm; display:flex; align-items:center; gap: 3mm; }
+h2::after { content:""; flex: 1; height: .2mm; background: linear-gradient(90deg, #b8925a, transparent); }
+.row { display: flex; align-items: baseline; gap: 2mm; margin: 1.05mm 0; break-inside: avoid; }
+.name { font-family: 'Playfair Display', serif; font-size: 14pt; color: #f6eee2; white-space: nowrap; }
+.desc { font-size: 8.5pt; color: #a8998a; font-weight: 400; margin: -.2mm 0 1.2mm; }
+.dots { flex: 1; border-bottom: .3mm dotted rgba(184,146,90,.6); transform: translateY(-1mm); min-width: 4mm; }
+.price { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 13pt; color: #e2bf82; white-space: nowrap; }
+.price small { font-weight: 400; color: #a8998a; font-size: .78em; margin-right: .8mm; }
+.item { break-inside: avoid; }
+.cols { column-count: 1; column-gap: 10mm; }
+.cols h2:first-child { margin-top: 0; }
+.foot { margin-top: auto; text-align: center; font-size: 8.5pt; color: #b9aa98; letter-spacing: .06em; line-height: 1.7; }
+.foot b { color: #d9b67a; font-weight: 600; }
+.book { display: flex; align-items: center; gap: 8mm; margin-top: auto; padding: 5mm 7mm;
+  border: .3mm solid rgba(184,146,90,.55); border-radius: 3mm; background: rgba(184,146,90,.06); }
+.qr { width: 40mm; height: 40mm; background: #fff; border-radius: 2mm; padding: 1.5mm; flex: none; }
+.qr img { width: 100%; height: 100%; display: block; }
+.book .cta { font-family: 'Playfair Display', serif; font-size: 20pt; color: #f6eee2; line-height: 1.15; }
+.book .cta em { color: #e2bf82; font-style: italic; }
+.book .sub { font-size: 9pt; color: #b9aa98; margin-top: 2.5mm; line-height: 1.6; letter-spacing: .03em; }
+.book .sub b { color: #d9b67a; font-weight: 600; }
+.note { text-align:center; font-size: 7.5pt; color:#8d7f71; margin-top: 2.5mm; letter-spacing:.04em; }
+</style></head><body><div class="page"><div class="frame"></div><div class="inner"><img class="logo" src="logo.png"><div class="title">Price List</div><div class="orn">✦</div><h2>Signature Treatments</h2><div class="item"><div class="row"><span class="name">Eternal Radiance Ritual</span><span class="dots"></span><span class="price">£160 <small>/ face & neck</small> £200</span></div><div class="desc">Our multi-step anti-ageing ritual: glow, firmness, hydration</div></div><div class="item"><div class="row"><span class="name">Clarity &amp; Youth Protocol</span><span class="dots"></span><span class="price">£130</span></div><div class="desc">For acne, pigmentation and dull skin</div></div><h2>Advanced Skin Treatments</h2><div class="item"><div class="row"><span class="name">Hydrogen Pure Glow</span><span class="dots"></span><span class="price">£75</span></div></div><div class="item"><div class="row"><span class="name">RF Firming Lift</span><span class="dots"></span><span class="price">£90</span></div></div><div class="item"><div class="row"><span class="name">OxiVelour + VivaLumix Glow</span><span class="dots"></span><span class="price">£140</span></div></div><div class="item"><div class="row"><span class="name">Riviena + RF Lift</span><span class="dots"></span><span class="price">£155</span></div></div><div class="item"><div class="row"><span class="name">ElastiStorm + RF Contour</span><span class="dots"></span><span class="price">£210</span></div></div><h2>Facials</h2><div class="item"><div class="row"><span class="name">Classic Facials</span><span class="dots"></span><span class="price"><small>from</small>£80</span></div></div><div class="item"><div class="row"><span class="name">Advanced Facials</span><span class="dots"></span><span class="price"><small>from</small>£80</span></div><div class="desc">Exosomes · copper peptides · colostrum and more</div></div><div class="item"><div class="row"><span class="name">Eye Radiance</span><span class="dots"></span><span class="price">£75</span></div></div><h2>Aesthetics</h2><div class="item"><div class="row"><span class="name">Microneedling</span><span class="dots"></span><span class="price">£95</span></div></div><div class="item"><div class="row"><span class="name">Fractional RF Renewal</span><span class="dots"></span><span class="price">£180</span></div></div><div class="item"><div class="row"><span class="name">Anti-wrinkle Injections</span><span class="dots"></span><span class="price">£140 <small>· 2 areas</small>£160 <small>· 3 areas</small>£190</span></div></div><div class="item"><div class="row"><span class="name">Russian Lips</span><span class="dots"></span><span class="price">£150</span></div></div><div class="item"><div class="row"><span class="name">Vampire Lift</span><span class="dots"></span><span class="price">£200 <small>/ face & neck</small> £250</span></div></div><div class="book"><div class="qr"><img src="qr.jpg"></div><div><div class="cta">Scan to <em>book online</em></div><div class="sub">Full treatment menu &amp; available times on Fresha<br>Tue – Fri 9:00 – 19:00 &nbsp;·&nbsp; Saturday 10:00 – 15:00<br>5 Peckover St, Bradford BD1 5BE &nbsp;·&nbsp; 07505 779013 &nbsp;·&nbsp; elysiumclinic.uk</div></div></div></div></div></body></html>

@@ -42,25 +42,34 @@ def story(inner, bg=''):
 def blurbg(img, pos='center', br=.35):
     return f'<div style="position:absolute;inset:0;background:url({img}) {pos}/cover;filter:blur(3px) brightness({br});transform:scale(1.05)"></div>'
 
-T = 5
+def rev(n, total, quotes):
+    blocks=''
+    for q,who,src,fs in quotes:
+        blocks+=(f'<div class="glass" style="padding:46px 56px 40px;text-align:center;margin-bottom:28px">'
+                 f'<div style="font-family:\'Playfair Display\',serif;font-size:130px;line-height:.45;color:rgba(216,173,116,.6)">“</div>'
+                 f'<div class="qt" style="font-size:{fs}px">{q}</div><div class="who" style="margin-top:22px"><span></span>{who}<span></span></div>'
+                 f'<div class="fine2" style="margin-top:8px">{src}</div></div>')
+    return post(n, total, f'<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">WHAT OUR CLIENTS SAY</div><div class="stars" style="margin-top:16px">★★★★★</div></div>'
+                f'<div style="position:absolute;left:80px;right:80px;top:240px;bottom:140px;display:flex;flex-direction:column;justify-content:center">{blocks}</div><div class="swipe">→</div>')
+T = 8
 P = {}
 P['p_1'] = post(1, T, '''<div style="position:absolute;top:150px;left:0;right:0;text-align:center"><div class="pill">BLACK FRIDAY · 2 DAYS LEFT</div>
 <div class="H goldtext ds" style="font-size:110px;margin-top:40px">Your skin,<br><em>our proof</em></div>
-<div class="txt" style="margin:36px 120px 0">Real words and real results from our clients this month 🤍</div>
+<div class="txt" style="margin:36px 120px 0">Real words and real results from our clients 🤍</div>
 <div class="stars" style="margin-top:40px">★★★★★</div></div><div class="swipe">SWIPE →</div>''', blurbg('party_woman.jpg', 'center 20%'))
-P['p_2'] = post(2, T, f'''<div style="position:absolute;top:110px;left:0;right:0;text-align:center"><div class="k">WHAT OUR CLIENTS SAY</div><div class="stars" style="margin-top:20px">★★★★★</div></div>
+P['p_2x'] = post(2, T, f'''<div style="position:absolute;top:110px;left:0;right:0;text-align:center"><div class="k">WHAT OUR CLIENTS SAY</div><div class="stars" style="margin-top:20px">★★★★★</div></div>
 <div class="glass" style="position:absolute;left:90px;right:90px;top:330px;padding:70px 70px 60px;text-align:center">
 <div style="font-family:'Playfair Display',serif;font-size:180px;line-height:.5;color:rgba(216,173,116,.6)">“</div>
 <div class="qt" style="font-size:52px;margin-top:10px">{REVIEW}</div>
 <div class="who"><span></span>IZABELA B.<span></span></div><div class="fine2" style="margin-top:10px">Facebook recommendation</div></div>
 <div class="swipe">→</div>''')
-P['p_3'] = post(3, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">RF MICRONEEDLING</div><div class="H goldtext" style="font-size:72px;margin-top:12px">One session, <em>straight after</em></div></div>
+P['p_6'] = post(6, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">RF MICRONEEDLING</div><div class="H goldtext" style="font-size:72px;margin-top:12px">One session, <em>straight after</em></div></div>
 <div class="pairs" style="position:absolute;left:70px;right:70px;top:290px;height:720px"><div class="ph2"><img src="c1_przed.jpg"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="c1_po.jpg"><div class="tag pill tg">AFTER</div></div></div>
 <div style="position:absolute;left:0;right:0;top:1040px;text-align:center"><div class="txt">Plumper, smoother skin · collagen builds for 4–6 weeks</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
-P['p_4'] = post(4, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">HYDROGEN PURE GLOW</div><div class="H goldtext" style="font-size:72px;margin-top:12px">One treatment, <em>no filters</em></div></div>
+P['p_7'] = post(7, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">HYDROGEN PURE GLOW</div><div class="H goldtext" style="font-size:72px;margin-top:12px">One treatment, <em>no filters</em></div></div>
 <div class="pairs" style="position:absolute;left:70px;right:70px;top:290px;height:720px"><div class="ph2"><img src="glow_b.jpg" style="object-position:center 40%"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="glow_a.jpg" style="object-position:center 40%"><div class="tag pill tg">AFTER</div></div></div>
 <div style="position:absolute;left:0;right:0;top:1040px;text-align:center"><div class="txt">Clearer pores · brighter, more even tone · instant glow</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
-P['p_5'] = post(5, T, '''<div style="position:absolute;top:120px;left:0;right:0;text-align:center"><div class="pill">YOUR TURN 🤍</div>
+P['p_8'] = post(8, T, '''<div style="position:absolute;top:120px;left:0;right:0;text-align:center"><div class="pill">YOUR TURN 🤍</div>
 <div class="H goldtext ds" style="font-size:96px;margin-top:34px">Ready for <em>your glow?</em></div></div>
 <div class="glass" style="position:absolute;left:110px;right:110px;top:520px;padding:40px 46px">
 <div style="display:flex;justify-content:space-between;font-size:30px;color:#fbf3e6;padding:12px 0;border-bottom:1px solid rgba(216,173,116,.25)"><b>RF Microneedling</b><span class="goldtext" style="font-family:'Playfair Display',serif;font-weight:800;font-size:44px">£110</span></div>
@@ -70,6 +79,13 @@ P['p_5'] = post(5, T, '''<div style="position:absolute;top:120px;left:0;right:0;
 <div style="position:absolute;left:0;right:0;top:960px;text-align:center"><div class="txt">Book by <b>Monday 30.11</b> · use until <b>31 January</b></div>
 <div class="pill" style="margin-top:30px;font-size:28px;padding:20px 50px">SEND “BF” TO BOOK</div></div>''', blurbg('gabinet.jpg', 'center', .3))
 
+FB='Facebook recommendation'
+TR='Facebook recommendation · translated from Polish'
+P['p_2']=rev(2,T,[(REVIEW,'IZABELA B.',FB,48)])
+P['p_3']=rev(3,T,[('With all my heart, I highly recommend. I have done the premium hydrogen facial, which was very relaxing. <b>My skin was dull and dry and after the treatment I feel a good change on my face.</b> She also explained how to take care of my skin… Monica is a really lovely lady.','SOBIA I.',FB,42)])
+P['p_4']=rev(4,T,[('I honestly recommend Monika! She’s always there with advice and help, and I’ve never been disappointed with her treatments. Every month we tailor the treatment to my skin’s needs. <b>I can see a huge difference in my face since I started visiting Monika.</b>','WERONIKA B.',TR,42)])
+P['p_5']=rev(5,T,[('Total professionalism. Monika knows exactly what to suggest. I chose <b>RF microneedling and I’m more than happy</b> 😊','KINGA K.',TR,38),
+                  ('So professional and lovely. <b>I can see results after the very first treatment</b> 🤩 Already planning my next visit!','SYLWIA W.',TR,38)])
 S = {}
 S['s1'] = story(f'''<div style="position:absolute;top:150px;left:0;right:0;text-align:center"><div class="pill">GOOD MORNING FROM ELYSIUM ☕</div><div class="stars" style="margin-top:36px">★★★★★</div></div>
 <div class="glass" style="position:absolute;left:90px;right:90px;top:420px;padding:70px 64px;text-align:center">
@@ -80,13 +96,14 @@ S['s2'] = story('''<div style="position:absolute;top:150px;left:0;right:0;text-a
 <div class="H goldtext ds" style="font-size:104px;margin-top:30px">The gift of<br><em>glowing skin</em></div></div>
 <div style="position:absolute;left:110px;right:110px;top:640px"><div class="voucher"><div class="vin">
 <div class="k" style="color:#f6dcae">ELYSIUM CLINIC</div><div class="H goldtext" style="font-size:88px;margin-top:14px">Gift Voucher</div>
-<div class="txt" style="margin-top:20px;margin-bottom:60px;font-size:28px">Any treatment · <b>Black Friday prices</b></div></div><div class="bow">🎀</div></div></div>
-<div style="position:absolute;left:0;right:0;top:1180px;text-align:center"><div class="txt">At Black Friday prices <b>until Monday 30.11</b></div></div>''', blurbg('party_woman.jpg', 'center 25%', .28))
+<div class="txt" style="margin-top:20px;margin-bottom:60px;font-size:28px">Any treatment · <b>valid for 6 months</b></div></div><div class="bow">🎀</div></div></div>
+<div style="position:absolute;left:0;right:0;top:1180px;text-align:center"><div class="txt">At Black Friday prices <b>until Monday 30.11</b><br>valid for <b>6 months</b> · the perfect Christmas gift 🎁</div></div>''', blurbg('party_woman.jpg', 'center 25%', .28))
 S['s3'] = story('''<div style="position:absolute;top:150px;left:0;right:0;text-align:center"><div class="pill">BLACK FRIDAY · NEW POST</div>
 <div class="H goldtext ds" style="font-size:330px;margin-top:20px;line-height:.9">2</div><div style="font-size:44px;letter-spacing:.34em;color:#fbf3e6;font-weight:700;margin-top:8px">DAYS LEFT</div></div>
 <div class="glass" style="position:absolute;left:110px;right:110px;top:800px;padding:40px;text-align:center">
-<div class="txt">RF Microneedling <b>£110</b> · ElastiStrom &amp; RF <b>£130</b><br>PorCerAmid <b>£55</b> · Hydrogen Pure Glow <b>£55</b><br>Glow before Christmas <b>£75</b> · Gift vouchers 🎁</div></div>
+<div class="txt">RF Microneedling <b>£110</b> · ElastiStrom &amp; RF <b>£130</b><br>PorCerAmid <b>£55</b> · Hydrogen Pure Glow <b>£55</b><br>Glow before Christmas <b>£75</b><br>Gift vouchers 🎁 valid for 6 months</div></div>
 <div style="position:absolute;left:0;right:0;top:1230px;text-align:center" class="txt">Book by <b>30.11</b> · use until <b>31.01</b></div>''', blurbg('rf_blue.jpg', 'center 30%', .32))
 
+P.pop('p_2x',None)
 for k, v in {**P, **S}.items():
     open(k + '.html', 'w').write(v)

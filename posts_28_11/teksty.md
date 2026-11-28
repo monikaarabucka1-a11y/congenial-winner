@@ -3,31 +3,37 @@
 Weekend: feed **10:00–11:00**, stories **9:30 · 13:00 · 18:00**. Zostały **2 dni** Black Friday.
 Słowa-klucze: **BF**, **VOUCHER**. Grafiki tylko po angielsku, w czarno-złotym stylu.
 
-## Do potwierdzenia
-- **Bony prezentowe:** czy bon w cenie Black Friday kupiony do 30.11 jest ważny do 31.01, jak zabiegi? I czy jest na konkretny zabieg, czy na kwotę? Na grafice jest „Any treatment · Black Friday prices”.
-- **Opinia:** użyłam jedynej prawdziwej opinii, jaką mam (Izabela B., Facebook). Jeśli masz więcej opinii z Google lub Facebooka, podeślij zrzuty, a dodam slajdy.
+## Ustalenia
+- Bon prezentowy: kupiony w cenie Black Friday do 30.11, **ważny 6 miesięcy**.
+- Opinie: prawdziwe z Facebooka. Angielskie są dosłownie (poprawione tylko literówki), polskie przetłumaczone z dopiskiem „translated from Polish”. Imię i inicjał nazwiska.
 
 ---
 
-## POST: karuzela `post_karuzela/slajd_1…5.png` (1080×1350), 10:00–11:00
+## POST: karuzela `post_karuzela/slajd_1…8.png` (1080×1350), 10:00–11:00
 1. „Your skin, our proof” ★★★★★ · 2 days left
-2. Opinia Izabeli B. (Facebook recommendation)
-3. RF Microneedling: przed / zaraz po
-4. Hydrogen Pure Glow: przed / po
-5. „Ready for your glow?” Ceny BF · book by 30.11, use until 31.01 · Send “BF”
+2. Izabela B. (EN)
+3. Sobia I.: premium hydrogen facial (EN)
+4. Weronika B.: co miesiąc dopasowany zabieg, ogromna różnica (tłum. z PL)
+5. Kinga K. (RF mikroigłowy) + Sylwia W. (efekt po pierwszym zabiegu) (tłum. z PL)
+6. RF Microneedling: przed / zaraz po
+7. Hydrogen Pure Glow: przed / po
+8. „Ready for your glow?” Ceny BF · Send “BF”
 
 ### Opis (EN)
-Your skin, our proof ✨ Real words and real results from our clients 🤍
+Your skin, our proof ✨ Real words and real results from our clients 🤍 Swipe 👉
 
-“I’m blown away by the fantastic results after each treatment! My skin never looked better. Monika has a huge knowledge and provides treatments to the highest standards.” ★★★★★ Izabela B.
+“My skin never looked better.” Izabela B.
+“My skin was dull and dry and after the treatment I feel a good change on my face.” Sobia I.
+“I can see a huge difference in my face since I started visiting Monika.” Weronika B.
+“I can see results after the very first treatment.” Sylwia W.
 
-Swipe to see the results 👉
+Thank you for every kind word, it means the world to us 🤍
 
 🖤 Only 2 days left of Black Friday:
 RF Microneedling £110 · ElastiStrom & RF Contour £130 · PorCerAmid £55 · Hydrogen Pure Glow £55 · Glow before Christmas £75
 
 Book by Monday 30 November and enjoy your treatment any time until 31 January.
-🎁 Looking for a Christmas gift? Our gift vouchers are at Black Friday prices too!
+🎁 Looking for a Christmas gift? Our gift vouchers are at Black Friday prices too, valid for 6 months!
 
 💬 Send “BF” or “VOUCHER” and I’ll reply within 1 hour
 
@@ -38,7 +44,7 @@ Shared with our clients’ permission. Results vary from person to person.
 
 ### Opis (PL, krótko)
 Wasze opinie i efekty to nasz najlepszy dowód 🤍 „Jestem zachwycona efektami po każdym zabiegu! Moja skóra nigdy nie wyglądała lepiej.” ★★★★★ Izabela B.
-🖤 Zostały 2 dni Black Friday. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. 🎁 Bony prezentowe też w cenach Black Friday. Napisz BF lub VOUCHER.
+🖤 Zostały 2 dni Black Friday. Zarezerwuj do 30.11, a z zabiegu skorzystasz do końca stycznia. 🎁 Bony prezentowe też w cenach Black Friday, ważne 6 miesięcy. Napisz BF lub VOUCHER.
 #PolkiWUK #KosmetologBradford #BradfordSkinClinic
 
 ---
@@ -50,7 +56,7 @@ Wasze opinie i efekty to nasz najlepszy dowód 🤍 „Jestem zachwycona efektam
 - Dobrze przypiąć link do opinii Google: „Leave us a review”.
 
 ## STORY 2 (13:00): `story2_1300_bony.png`
-- „Christmas gift sorted 🎄 · The gift of glowing skin”, złoty bon „Elysium Clinic Gift Voucher · Any treatment · Black Friday prices” z kokardą, „At Black Friday prices until Monday 30.11”.
+- „Christmas gift sorted 🎄 · The gift of glowing skin”, złoty bon „Elysium Clinic Gift Voucher · Any treatment · valid for 6 months” z kokardą, „At Black Friday prices until Monday 30.11 · valid for 6 months · the perfect Christmas gift 🎁”.
 - **Naklejka Ankieta** w miejscu „POLL ↓”: „Who would love this gift?”, odpowiedzi **Mum 💕 / Bestie ✨**.
 - Dodaj też naklejkę **Link** (Fresha / bony) albo „Send VOUCHER”.
 
@@ -60,4 +66,4 @@ Wasze opinie i efekty to nasz najlepszy dowód 🤍 „Jestem zachwycona efektam
 - **Naklejka Link** pod „BOOK NOW ↓” i **odliczanie** do 30.11.
 
 ## Odpowiedź na „VOUCHER” (szablon)
-Hi! 🎁 What a lovely gift idea! Our gift vouchers are available at Black Friday prices until Monday 30.11. You can choose a specific treatment (e.g. Hydrogen Pure Glow £55, Glow before Christmas package £75) or an amount. Who is it for? I’ll send you the details and can prepare a beautiful voucher ready to give 🤍
+Hi! 🎁 What a lovely gift idea! Our gift vouchers are available at Black Friday prices until Monday 30.11 and are valid for 6 months. You can choose a specific treatment (e.g. Hydrogen Pure Glow £55, Glow before Christmas package £75) or an amount. Who is it for? I’ll send you the details and can prepare a beautiful voucher ready to give 🤍

@@ -17,8 +17,8 @@ Słowa-klucze: **BF**, **VOUCHER**. Grafiki tylko po angielsku, w czarno-złotym
 5. Kinga K. (RF mikroigłowy) + Sylwia W. (efekt po pierwszym zabiegu) (tłum. z PL)
 6. RF Microneedling: przed / zaraz po
 7. Hydrogen Pure Glow: przed / po
-8. Real results: „Softer lines, lifted contour” (przed/po, kadr bez oczu)
-9. Real results: „Fresher, firmer skin” (przed/po, kadr bez oczu)
+8. ElastiStrom & RF Contour: „Softer lines, lifted contour” (przed/po, kadr bez oczu)
+9. ElastiStrom & RF Contour: „Fresher, firmer skin” (przed/po, kadr bez oczu)
 10. „Ready for your glow?” Ceny BF · Send “BF”
 
 ### Opis (EN)
@@ -28,6 +28,8 @@ Your skin, our proof ✨ Real words and real results from our clients 🤍 Swipe
 “My skin was dull and dry and after the treatment I feel a good change on my face.” Sobia I.
 “I can see a huge difference in my face since I started visiting Monika.” Weronika B.
 “I can see results after the very first treatment.” Sylwia W.
+
+Swipe to the end for ElastiStrom & RF Contour before & afters: softer lines and a lifted contour, with no needles 👀
 
 Thank you for every kind word, it means the world to us 🤍
 

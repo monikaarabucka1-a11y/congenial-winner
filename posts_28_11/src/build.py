@@ -80,12 +80,12 @@ P['p_10'] = post(10, T, '''<div style="position:absolute;top:120px;left:0;right:
 <div style="position:absolute;left:0;right:0;top:960px;text-align:center"><div class="txt">Book by <b>Monday 30.11</b> · use until <b>31 January</b></div>
 <div class="pill" style="margin-top:30px;font-size:28px;padding:20px 50px">SEND “BF” TO BOOK</div></div>''', blurbg('gabinet.jpg', 'center', .3))
 
-P['p_8'] = post(8, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">REAL RESULTS</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Softer lines, <em>lifted contour</em></div></div>
+P['p_8'] = post(8, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">ELASTISTROM &amp; RF CONTOUR</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Softer lines, <em>lifted contour</em></div></div>
 <div class="pairs" style="position:absolute;left:60px;right:60px;top:330px;height:560px"><div class="ph2"><img src="d_b.jpg"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="d_a.jpg"><div class="tag pill tg">AFTER</div></div></div>
-<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">Smoother nasolabial lines · firmer jawline · fresher tone</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
-P['p_9'] = post(9, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">REAL RESULTS</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Fresher, <em>firmer skin</em></div></div>
+<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">Needle-free RF + microcurrent gloves · softer lines · firmer jawline</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
+P['p_9'] = post(9, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">ELASTISTROM &amp; RF CONTOUR</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Fresher, <em>firmer skin</em></div></div>
 <div class="pairs" style="position:absolute;left:60px;right:60px;top:330px;height:560px"><div class="ph2"><img src="e_b.jpg"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="e_a.jpg"><div class="tag pill tg">AFTER</div></div></div>
-<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">More defined contour · even, radiant complexion</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
+<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">Needle-free RF + microcurrent gloves · more defined contour</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
 FB='Facebook recommendation'
 TR='Facebook recommendation · translated from Polish'
 P['p_2']=rev(2,T,[(REVIEW,'IZABELA B.',FB,48)])

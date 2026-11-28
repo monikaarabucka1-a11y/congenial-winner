@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="pl">
+<html>
 <head>
 <meta charset="utf-8">
-<title>Elysium – Karta Rytuałów</title>
+<title>Elysium – Beauty Ritual Card</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
 <style>
   /* --bleed: 0mm = format A6 netto; 3mm = plik dla drukarni ze spadami */
@@ -62,9 +62,11 @@
   .cover .sub { font-size: 5.6pt; margin-top: 1.2mm; color: var(--gold-l); }
   .cover h1 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 17pt; color: #efe3c8; margin-top: 11mm; line-height: 1.15; }
   .cover .tag { font-size: 5.4pt; letter-spacing: .38em; padding-left: .38em; text-transform: uppercase; color: var(--gold); margin-top: 3mm; }
-  .owner { position: absolute; left: 14mm; right: 14mm; bottom: 15mm; text-align: center; }
-  .owner .lbl { font-size: 5pt; letter-spacing: .35em; padding-left: .35em; text-transform: uppercase; color: var(--gold); }
-  .owner .line { border-bottom: .2mm solid rgba(184,149,90,.7); height: 7mm; }
+  /* jasna tabliczka na imię i nazwisko */
+  .owner { position: absolute; left: 13mm; right: 13mm; bottom: 13mm; background: var(--ivory); border: .3mm solid var(--gold); padding: 2.6mm 4mm 2.4mm; text-align: center; }
+  .owner::before { content: ""; position: absolute; inset: .9mm; border: .15mm solid rgba(184,149,90,.5); pointer-events: none; }
+  .owner .lbl { font-size: 4.8pt; letter-spacing: .35em; padding-left: .35em; text-transform: uppercase; color: var(--gold-d); }
+  .owner .line { border-bottom: .2mm solid var(--gold); height: 7.5mm; }
 
   /* ---------- strony jasne ---------- */
   .light .trim { padding: 9mm 8mm 11mm; display: flex; flex-direction: column; }
@@ -127,128 +129,111 @@
   .back .quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 10.5pt; color: #efe3c8; line-height: 1.35; margin: 8mm 0 7mm; }
   .back .lbl { font-size: 4.8pt; letter-spacing: .38em; padding-left: .38em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.6mm; }
   .back .hours { font-family: 'Playfair Display', serif; font-size: 7pt; color: #efe3c8; line-height: 1.7; }
-  .back .contact { margin-top: 6mm; font-size: 5.6pt; letter-spacing: .1em; color: #d8c9a8; line-height: 2; font-weight: 300; }
+  .back .contact { margin-top: 1mm; font-family: 'Playfair Display', serif; font-size: 7pt; letter-spacing: .06em; color: #efe3c8; line-height: 1.75; }
+  .back .contact .tel { font-family: 'Montserrat', sans-serif; font-size: 6.4pt; letter-spacing: .16em; color: var(--gold-l); margin-top: 1.5mm; display: block; }
 
   @media screen { body { padding: 10mm; display: flex; flex-wrap: wrap; gap: 8mm; } }
 </style>
 </head>
 <body>
-
-<!-- 1 · OKŁADKA -->
-<section class="page dark cover"><div class="trim">
-  <div class="frame"><span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span></div>
-  <div class="inner">
-    <div class="monogram gold-text">E</div>
-    <div class="wordmark"><div class="name gold-text">ELYSIUM</div><div class="sub">CLINIC</div></div>
-    <div class="rule" style="margin-top:3mm"><span>✦</span></div>
-    <h1>Karta Twoich<br>Rytuałów Piękna</h1>
-    <div class="tag">Dziennik zabiegów &amp; karta lojalnościowa</div>
-  </div>
-  <div class="owner"><div class="line"></div><div class="lbl" style="margin-top:1.6mm">Należy do</div></div>
-</div></section>
-
-<!-- 2 · POWITANIE -->
-<section class="page light welcome"><div class="trim">
-  <div class="edge"></div>
-  <div class="head"><div class="mini">ELYSIUM</div><div class="rule"><span>✦</span></div></div>
-  <div class="body">
-    <div class="salute">Droga Klientko,</div>
-    <p>ta książeczka jest <strong>Twoim osobistym dziennikiem piękna</strong>. Zapisuj w niej datę każdej wizyty, nazwę zabiegu i swoje wrażenia, aby zawsze pamiętać, co i kiedy dla siebie zrobiłaś.</p>
-    <p>To również <strong>Twoja karta lojalnościowa</strong>. Przy 10. i 20. wizycie czeka na Ciebie wyjątkowy upominek od nas, w podziękowaniu za zaufanie.</p>
-    <div class="how">
-      <div><div class="n">1</div><div class="t">Przynoś kartę<br>na każdą wizytę</div></div>
-      <div><div class="n">10</div><div class="t">Złoty<br>upominek</div></div>
-      <div><div class="n">20</div><div class="t">Wielki Rytuał<br>Elysium</div></div>
-    </div>
-    <div class="sign">Z miłością, zespół Elysium</div>
-  </div>
-  <div class="folio"><span>— 2 —</span></div>
-</div></section>
-
-<!-- 3–6 · TABELE (generowane) -->
-<div id="tables"></div>
-
-<!-- 7 · UPOMINKI -->
-<section class="page light gifts"><div class="trim">
-  <div class="edge"></div>
-  <div class="head"><div class="mini">ELYSIUM</div><h2>Twoje <em>upominki</em></h2><div class="rule"><span>✦</span></div></div>
-
-  <div class="card">
-    <div class="badge">10. wizyta</div>
-    <h3>Złoty Upominek</h3>
-    <p>Elegancko zapakowany kosmetyk premium w wersji mini, starannie dobrany do potrzeb Twojej skóry, abyś mogła przedłużyć efekt zabiegów w domu.</p>
-    <div class="stamp">
-      <div class="f"><i></i><small>Data odbioru</small></div>
-      <div class="f"><i></i><small>Podpis</small></div>
-      <div class="seal">Pieczęć</div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="badge">20. wizyta</div>
-    <h3>Wielki Rytuał Elysium</h3>
-    <p>Luksusowe pudełko prezentowe z pełnowymiarowym kosmetykiem do pielęgnacji domowej oraz relaksującą sesją światłoterapii LED gratis przy kolejnym zabiegu.</p>
-    <div class="stamp">
-      <div class="f"><i></i><small>Data odbioru</small></div>
-      <div class="f"><i></i><small>Podpis</small></div>
-      <div class="seal">Pieczęć</div>
-    </div>
-  </div>
-
-  <div class="note">Upominek wydawany jest po okazaniu karty z kompletem wpisów.<br>Karta jest imienna i nie podlega wymianie na gotówkę.</div>
-  <div class="folio"><span>— 7 —</span></div>
-</div></section>
-
-<!-- 8 · TYŁ -->
-<section class="page dark back"><div class="trim">
-  <div class="frame"><span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span></div>
-  <div class="inner">
-    <div class="wordmark"><div class="name gold-text">ELYSIUM</div><div class="sub">CLINIC</div></div>
-    <div class="quote">„Piękno to rytuał,<br>nie przypadek.”</div>
-    <div class="lbl">Zapraszamy</div>
-    <div class="hours">Wtorek – Piątek · 9:00 – 19:00<br>Sobota · 10:00 – 15:00</div>
-    <div class="rule" style="margin-top:5mm"><span>✦</span></div>
-    <div class="contact">ul. ________________________<br>tel. ______________________<br>@elysium.clinic</div>
-  </div>
-</div></section>
-
+<div id="book"></div>
 <script>
-  // 20 wierszy, po 5 na stronę; 10. i 20. wizyta = upominek
-  const host = document.getElementById('tables');
-  for (let p = 0; p < 4; p++) {
-    const from = p * 5 + 1, to = from + 4;
-    let rows = '';
-    for (let i = from; i <= to; i++) {
-      const gift = i === 10 || i === 20;
-      rows += `<tr class="${gift ? 'gift' : ''}">
-        <td><span class="num">${i}</span>${gift ? `<span class="giftlbl">✦ Upominek<small>${i === 10 ? 'Złoty' : 'Wielki Rytuał'}</small></span>` : ''}<span class="dateph">__ . __ . ____</span></td>
-        <td><div class="lines"></div></td>
-        <td><div class="lines"></div></td></tr>`;
-    }
-    const giftName = to === 10 ? 'Złoty Upominek' : to === 20 ? 'Wielki Rytuał Elysium' : '';
-    const band = giftName ? `<div class="gift-band">${to}. wizyta · <b>${giftName}</b> · czeka na Ciebie</div>` : '';
-    host.insertAdjacentHTML('beforebegin', `
-    <section class="page light"><div class="trim">
-      <div class="edge"></div>
-      <div class="head"><div class="mini">ELYSIUM</div><h2>Wizyty <em>${from} – ${to}</em></h2><div class="rule"><span>✦</span></div></div>
-      <table><colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
-        <thead><tr><th>Data</th><th>Nazwa zabiegu</th><th>Twoja opinia <span class="g">o zabiegu</span></th></tr></thead>
-        <tbody>${rows}</tbody></table>
-      <div class="folio"><span>— ${p + 3} —</span></div>
-    </div></section>`);
+const T = {
+  pl: {
+    lang: 'pl', title: 'Karta Twoich<br>Rytuałów Piękna', tag: 'Dziennik zabiegów &amp; karta lojalnościowa', owner: 'Należy do',
+    salute: 'Droga Klientko,',
+    p1: 'ta książeczka jest <strong>Twoim osobistym dziennikiem piękna</strong>. Zapisuj w niej datę każdej wizyty, nazwę zabiegu i swoje wrażenia, aby zawsze pamiętać, co i kiedy dla siebie zrobiłaś.',
+    p2: 'To również <strong>Twoja karta lojalnościowa</strong>. Przy 10. i 20. wizycie czeka na Ciebie wyjątkowy upominek od nas, w podziękowaniu za zaufanie.',
+    how: ['Przynoś kartę<br>na każdą wizytę', 'Złoty<br>upominek', 'Wielki Rytuał<br>Elysium'],
+    sign: 'Z miłością, zespół Elysium',
+    visits: 'Wizyty', cols: ['Data', 'Nazwa zabiegu', 'Twoja opinia <span class="g">o zabiegu</span>'], date: '__ . __ . ____',
+    giftLbl: 'Upominek', g10: 'Złoty', g20: 'Wielki Rytuał',
+    giftsH: 'Twoje <em>upominki</em>', visitN: n => n + '. wizyta',
+    gift10: 'Złoty Upominek', gift10p: 'Pełnowymiarowe serum premium do pielęgnacji domowej, dobrane do potrzeb Twojej skóry, abyś mogła przedłużyć efekty zabiegów.',
+    gift20: 'Wielki Rytuał Elysium', gift20p: 'Wyjątkowy upominek: luksusowy, pełnowymiarowy kosmetyk premium w eleganckim opakowaniu prezentowym, nasze podziękowanie za Twoją lojalność.',
+    recv: 'Data odbioru', signLbl: 'Podpis', seal: 'Pieczęć',
+    note: 'Upominek wydawany jest po okazaniu karty z kompletem wpisów.<br>Karta jest imienna i nie podlega wymianie na gotówkę.',
+    quote: '„Piękno to rytuał,<br>nie przypadek.”', visit: 'Zapraszamy', tel: 'tel.'
+  },
+  en: {
+    lang: 'en-GB', title: 'Your Beauty<br>Ritual Journal', tag: 'Treatment diary &amp; loyalty card', owner: 'This journal belongs to',
+    salute: 'Dear Client,',
+    p1: 'This little book is <strong>your personal beauty journal</strong>. Note down the date of each visit, the treatment you had and how you felt about it, so you will always remember what you did for yourself, and when.',
+    p2: 'It is also <strong>your loyalty card</strong>. On your 10th and 20th visits, a special gift awaits you as our thank you for your trust.',
+    how: ['Bring your card<br>to every visit', 'Golden<br>gift', 'The Grand<br>Elysium Ritual'],
+    sign: 'With love, the Elysium team',
+    visits: 'Visits', cols: ['Date', 'Treatment', 'Your <span class="g">thoughts</span>'], date: '__ / __ / ____',
+    giftLbl: 'Gift', g10: 'Golden', g20: 'Grand Ritual',
+    giftsH: 'Your <em>gifts</em>', visitN: n => n + 'th visit',
+    gift10: 'The Golden Gift', gift10p: 'A full-size premium serum for your home routine, chosen to suit your skin, so you can prolong the results of your treatments.',
+    gift20: 'The Grand Elysium Ritual', gift20p: 'A truly special gift: a luxurious, full-size premium product, beautifully gift-wrapped, as our thank you for your loyalty.',
+    recv: 'Date collected', signLbl: 'Signature', seal: 'Stamp',
+    note: 'Gifts are given on presentation of a fully completed card.<br>This card is personal and non-transferable, with no cash alternative.',
+    quote: '‘Beauty is a ritual,<br>not a coincidence.’', visit: 'Visit us', tel: 'tel.'
   }
-  host.remove();
-  // delikatny złoty pył na ciemnych stronach
-  document.querySelectorAll('.dark .trim').forEach((t, k) => {
-    let s = 7 + k * 13;
-    const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-    for (let i = 0; i < 26; i++) {
-      const d = document.createElement('i'); d.className = 'dust';
-      const z = .25 + r() * .6;
-      Object.assign(d.style, { left: r() * 100 + '%', top: r() * 100 + '%', width: z + 'mm', height: z + 'mm', opacity: .15 + r() * .45 });
-      t.prepend(d);
-    }
-  });
+};
+const L = T[new URLSearchParams(location.search).get('lang') || 'pl'];
+document.documentElement.lang = L.lang;
+const frame = '<div class="frame"><span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span></div>';
+const head = (h, folio) => `<div class="edge"></div><div class="head"><div class="mini">ELYSIUM</div>${h ? `<h2>${h}</h2>` : ''}<div class="rule"><span>✦</span></div></div>`;
+const folio = n => `<div class="folio"><span>— ${n} —</span></div>`;
+const wordmark = '<div class="wordmark"><div class="name gold-text">ELYSIUM</div><div class="sub">CLINIC</div></div>';
+let html = '';
+
+html += `<section class="page dark cover"><div class="trim">${frame}
+  <div class="inner" style="padding-bottom:20mm">
+    <div class="monogram gold-text">E</div>${wordmark}
+    <div class="rule" style="margin-top:3mm"><span>✦</span></div>
+    <h1>${L.title}</h1><div class="tag">${L.tag}</div>
+  </div>
+  <div class="owner"><div class="lbl">${L.owner}</div><div class="line"></div></div>
+</div></section>`;
+
+html += `<section class="page light welcome"><div class="trim">${head('')}
+  <div class="body">
+    <div class="salute">${L.salute}</div><p>${L.p1}</p><p>${L.p2}</p>
+    <div class="how">${[1, 10, 20].map((n, i) => `<div><div class="n">${n}</div><div class="t">${L.how[i]}</div></div>`).join('')}</div>
+    <div class="sign">${L.sign}</div>
+  </div>${folio(2)}</div></section>`;
+
+for (let p = 0; p < 4; p++) {
+  const from = p * 5 + 1, to = from + 4;
+  let rows = '';
+  for (let i = from; i <= to; i++) {
+    const gift = i === 10 || i === 20;
+    rows += `<tr class="${gift ? 'gift' : ''}"><td><span class="num">${i}</span>${gift ? `<span class="giftlbl">✦ ${L.giftLbl}<small>${i === 10 ? L.g10 : L.g20}</small></span>` : ''}<span class="dateph">${L.date}</span></td><td><div class="lines"></div></td><td><div class="lines"></div></td></tr>`;
+  }
+  html += `<section class="page light"><div class="trim">${head(`${L.visits} <em>${from} – ${to}</em>`)}
+    <table><colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
+      <thead><tr>${L.cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+    ${folio(p + 3)}</div></section>`;
+}
+
+const card = (n, h, txt) => `<div class="card"><div class="badge">${L.visitN(n)}</div><h3>${h}</h3><p>${txt}</p>
+  <div class="stamp"><div class="f"><i></i><small>${L.recv}</small></div><div class="f"><i></i><small>${L.signLbl}</small></div><div class="seal">${L.seal}</div></div></div>`;
+html += `<section class="page light gifts"><div class="trim">${head(L.giftsH)}
+  ${card(10, L.gift10, L.gift10p)}${card(20, L.gift20, L.gift20p)}
+  <div class="note">${L.note}</div>${folio(7)}</div></section>`;
+
+html += `<section class="page dark back"><div class="trim">${frame}
+  <div class="inner">${wordmark}
+    <div class="quote">${L.quote}</div>
+    <div class="lbl">${L.visit}</div>
+    <div class="contact">5 Peckover Street<br>Bradford BD1 5BE<span class="tel">${L.tel} 07505 779013</span></div>
+  </div></div></section>`;
+
+document.getElementById('book').outerHTML = html;
+
+document.querySelectorAll('.dark .trim').forEach((t, k) => {
+  let s = 7 + k * 13;
+  const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < 26; i++) {
+    const d = document.createElement('i'); d.className = 'dust';
+    const z = .25 + r() * .6;
+    Object.assign(d.style, { left: r() * 100 + '%', top: r() * 100 + '%', width: z + 'mm', height: z + 'mm', opacity: .15 + r() * .45 });
+    t.prepend(d);
+  }
+});
 </script>
 </body>
 </html>

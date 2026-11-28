@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Elysium – Karta Rytuałów</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  /* --bleed: 0mm = format A6 netto; 3mm = plik dla drukarni ze spadami */
+  :root {
+    --bleed: 0mm;
+    --w: 105mm; --h: 148mm;
+    --black: #0d0b09;
+    --black2: #1a1612;
+    --ivory: #fbf7ef;
+    --gold: #b8955a;
+    --gold-l: #d9bd84;
+    --gold-d: #8c6a35;
+    --ink: #2b241c;
+    --muted: #8a7a63;
+  }
+  @page { size: calc(var(--w) + 2*var(--bleed)) calc(var(--h) + 2*var(--bleed)); margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #777; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; font-family: 'Montserrat', sans-serif; color: var(--ink); }
+
+  .page {
+    width: calc(var(--w) + 2*var(--bleed));
+    height: calc(var(--h) + 2*var(--bleed));
+    padding: var(--bleed);
+    position: relative; overflow: hidden;
+    page-break-after: always; break-after: page;
+    background: var(--ivory);
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .trim { width: var(--w); height: var(--h); position: relative; }
+
+  /* ---------- wspólne elementy ---------- */
+  .gold-text { color: #d6b97f; }
+  .wordmark { text-align: center; }
+  .wordmark .name { font-family: 'Playfair Display', serif; font-weight: 500; letter-spacing: .14em; }
+  .wordmark .sub  { font-family: 'Montserrat', sans-serif; font-weight: 400; letter-spacing: .55em; padding-left: .55em; }
+  .rule { display: flex; align-items: center; justify-content: center; gap: 2.2mm; color: var(--gold); }
+  .rule::before, .rule::after { content: ""; height: .25mm; width: 12mm; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .rule::after { transform: scaleX(-1); }
+  .rule span { font-size: 6pt; line-height: 1; }
+  .spark { font-size: 7pt; color: var(--gold); }
+
+  /* ---------- okładka (czarna) ---------- */
+  .dark { background:
+      radial-gradient(ellipse at 50% 38%, #2a221a 0%, var(--black) 62%),
+      var(--black); color: var(--gold-l); }
+  .frame { position: absolute; inset: 6mm; border: .3mm solid rgba(184,149,90,.75); }
+  .frame::after { content: ""; position: absolute; inset: 1.2mm; border: .15mm solid rgba(184,149,90,.4); }
+  .corner { position: absolute; width: 5mm; height: 5mm; color: var(--gold-l); font-size: 8pt; display: flex; align-items: center; justify-content: center; background: var(--black); }
+  .corner.tl { top: -2.5mm; left: -2.5mm; } .corner.tr { top: -2.5mm; right: -2.5mm; }
+  .corner.bl { bottom: -2.5mm; left: -2.5mm; } .corner.br { bottom: -2.5mm; right: -2.5mm; }
+  .dust { position: absolute; border-radius: 50%; background: #e8cf98; }
+
+  .cover .inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 12mm; }
+  .monogram { font-family: 'Playfair Display', serif; font-style: italic; font-size: 30pt; line-height: 1; width: 17mm; height: 17mm; border: .3mm solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 5mm; padding-bottom: .8mm; }
+  .cover .name { font-size: 21pt; }
+  .cover .sub { font-size: 5.6pt; margin-top: 1.2mm; color: var(--gold-l); }
+  .cover h1 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 17pt; color: #efe3c8; margin-top: 11mm; line-height: 1.15; }
+  .cover .tag { font-size: 5.4pt; letter-spacing: .38em; padding-left: .38em; text-transform: uppercase; color: var(--gold); margin-top: 3mm; }
+  .owner { position: absolute; left: 14mm; right: 14mm; bottom: 15mm; text-align: center; }
+  .owner .lbl { font-size: 5pt; letter-spacing: .35em; padding-left: .35em; text-transform: uppercase; color: var(--gold); }
+  .owner .line { border-bottom: .2mm solid rgba(184,149,90,.7); height: 7mm; }
+
+  /* ---------- strony jasne ---------- */
+  .light .trim { padding: 9mm 8mm 11mm; display: flex; flex-direction: column; }
+  .light .edge { position: absolute; inset: 4.5mm; border: .2mm solid rgba(184,149,90,.55); pointer-events: none; }
+  .head { text-align: center; margin-bottom: 4mm; }
+  .head .mini { font-family: 'Playfair Display', serif; font-size: 7pt; letter-spacing: .3em; padding-left: .3em; color: var(--gold-d); }
+  .head h2 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 12.5pt; color: var(--ink); margin: 1.2mm 0 1.4mm; }
+  .head h2 em { font-family: 'Cormorant Garamond', serif; color: var(--gold-d); font-size: 13.5pt; }
+  .folio { position: absolute; bottom: 6.3mm; left: 0; right: 0; text-align: center; font-family: 'Playfair Display', serif; font-size: 6pt; color: var(--gold-d); letter-spacing: .2em; background: transparent; }
+  .folio span { background: var(--ivory); padding: 0 2mm; }
+
+  /* powitanie */
+  .welcome .body { flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 0 3mm 4mm; }
+  .welcome .salute { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt; color: var(--gold-d); margin-bottom: 3mm; }
+  .welcome p { font-size: 6.6pt; line-height: 1.75; color: #4a4035; font-weight: 300; margin-bottom: 2.6mm; }
+  .welcome p strong { font-weight: 500; color: var(--ink); }
+  .how { margin-top: 2mm; border-top: .2mm solid rgba(184,149,90,.5); border-bottom: .2mm solid rgba(184,149,90,.5); padding: 3mm 0; display: flex; justify-content: space-around; }
+  .how > div { width: 32%; text-align: center; }
+  .how .n { font-family: 'Playfair Display', serif; font-size: 14pt; color: var(--gold); line-height: 1; }
+  .how .t { font-size: 4.9pt; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 1.2mm; line-height: 1.5; }
+  .sign { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 10pt; color: var(--ink); margin-top: 3.5mm; }
+
+  /* tabela */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; flex: 1; }
+  col.c1 { width: 21%; } col.c2 { width: 33%; } col.c3 { width: 46%; }
+  th { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 4.9pt; letter-spacing: .2em; text-transform: uppercase; color: var(--ivory); background: var(--black2); padding: 2.2mm 1mm 2mm; text-align: center; border-left: .2mm solid #3a3127; }
+  th:first-child { border-left: 0; }
+  th .g { color: var(--gold-l); }
+  td { border: .2mm solid rgba(184,149,90,.55); vertical-align: top; position: relative; height: 19.2mm; }
+  td .num { position: absolute; top: 1.2mm; left: 1.4mm; font-family: 'Playfair Display', serif; font-size: 6.5pt; color: var(--gold-d); font-style: italic; }
+  td .lines { position: absolute; left: 2mm; right: 2mm; top: 6.2mm; bottom: 2mm;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 4.05mm, rgba(184,149,90,.35) 4.05mm, rgba(184,149,90,.35) 4.25mm); }
+  td .dateph { position: absolute; left: 0; right: 0; bottom: 2.4mm; text-align: center; font-size: 6pt; color: rgba(140,122,99,.55); letter-spacing: .12em; }
+
+  tr.gift td { background: linear-gradient(180deg, #f6ecd6, #f1e3c4); border-color: var(--gold); }
+  tr.gift td .num { color: var(--ivory); background: var(--gold); font-style: normal; border-radius: 50%; width: 4.6mm; height: 4.6mm; display: flex; align-items: center; justify-content: center; top: .9mm; left: 1mm; font-size: 5.6pt; }
+  td .giftlbl { position: absolute; left: 0; right: 0; top: 7mm; text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 7.5pt; color: var(--gold-d); line-height: 1.15; }
+  td .giftlbl small { display: block; font-family: 'Montserrat', sans-serif; font-style: normal; font-size: 3.9pt; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: .6mm; }
+  .gift-band { font-family: 'Montserrat', sans-serif; font-size: 4.7pt; letter-spacing: .22em; text-transform: uppercase; text-align: center; color: var(--gold-d); padding: 1.5mm 0 1.1mm; background: linear-gradient(90deg, transparent, #f1e3c4 20%, #f1e3c4 80%, transparent); border-top: .2mm solid var(--gold); border-bottom: .2mm solid var(--gold); margin-top: 1.6mm; }
+  .gift-band b { font-family: 'Playfair Display', serif; font-weight: 500; font-style: italic; text-transform: none; letter-spacing: .03em; font-size: 7pt; color: var(--ink); }
+
+  /* strona upominków */
+  .gifts .card { border: .25mm solid var(--gold); padding: 4mm 4mm 3.2mm; text-align: center; position: relative; background: linear-gradient(180deg, #fffdf8, #f6ecd8); }
+  .gifts .card + .card { margin-top: 4.5mm; }
+  .gifts .card::before { content: ""; position: absolute; inset: .9mm; border: .15mm solid rgba(184,149,90,.45); pointer-events: none; }
+  .gifts .badge { font-family: 'Playfair Display', serif; font-size: 5.5pt; letter-spacing: .3em; padding-left: .3em; text-transform: uppercase; color: var(--gold-d); }
+  .gifts h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 13pt; color: var(--ink); margin: .8mm 0 1.3mm; }
+  .gifts p { font-size: 5.9pt; line-height: 1.6; font-weight: 300; color: #4a4035; }
+  .gifts .stamp { display: flex; align-items: flex-end; justify-content: space-between; gap: 3mm; margin-top: 3mm; }
+  .gifts .stamp .f { flex: 1; text-align: left; }
+  .gifts .stamp .f i { display: block; border-bottom: .2mm solid rgba(184,149,90,.8); height: 4.2mm; }
+  .gifts .stamp .f small { font-size: 4.4pt; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .gifts .seal { width: 12mm; height: 12mm; border: .25mm dashed var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4pt; letter-spacing: .15em; color: var(--muted); text-transform: uppercase; flex: none; }
+  .gifts .note { text-align: center; font-size: 4.6pt; color: var(--muted); margin-top: 3.4mm; letter-spacing: .05em; line-height: 1.5; }
+
+  /* tył */
+  .back .inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 14mm; }
+  .back .name { font-size: 15pt; }
+  .back .sub { font-size: 5pt; margin-top: 1mm; color: var(--gold-l); }
+  .back .quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 10.5pt; color: #efe3c8; line-height: 1.35; margin: 8mm 0 7mm; }
+  .back .lbl { font-size: 4.8pt; letter-spacing: .38em; padding-left: .38em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.6mm; }
+  .back .hours { font-family: 'Playfair Display', serif; font-size: 7pt; color: #efe3c8; line-height: 1.7; }
+  .back .contact { margin-top: 6mm; font-size: 5.6pt; letter-spacing: .1em; color: #d8c9a8; line-height: 2; font-weight: 300; }
+
+  @media screen { body { padding: 10mm; display: flex; flex-wrap: wrap; gap: 8mm; } }
+</style>
+</head>
+<body>
+
+<!-- 1 · OKŁADKA -->
+<section class="page dark cover"><div class="trim">
+  <div class="frame"><span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span></div>
+  <div class="inner">
+    <div class="monogram gold-text">E</div>
+    <div class="wordmark"><div class="name gold-text">ELYSIUM</div><div class="sub">CLINIC</div></div>
+    <div class="rule" style="margin-top:3mm"><span>✦</span></div>
+    <h1>Karta Twoich<br>Rytuałów Piękna</h1>
+    <div class="tag">Dziennik zabiegów &amp; karta lojalnościowa</div>
+  </div>
+  <div class="owner"><div class="line"></div><div class="lbl" style="margin-top:1.6mm">Należy do</div></div>
+</div></section>
+
+<!-- 2 · POWITANIE -->
+<section class="page light welcome"><div class="trim">
+  <div class="edge"></div>
+  <div class="head"><div class="mini">ELYSIUM</div><div class="rule"><span>✦</span></div></div>
+  <div class="body">
+    <div class="salute">Droga Klientko,</div>
+    <p>ta książeczka jest <strong>Twoim osobistym dziennikiem piękna</strong>. Zapisuj w niej datę każdej wizyty, nazwę zabiegu i swoje wrażenia, aby zawsze pamiętać, co i kiedy dla siebie zrobiłaś.</p>
+    <p>To również <strong>Twoja karta lojalnościowa</strong>. Przy 10. i 20. wizycie czeka na Ciebie wyjątkowy upominek od nas, w podziękowaniu za zaufanie.</p>
+    <div class="how">
+      <div><div class="n">1</div><div class="t">Przynoś kartę<br>na każdą wizytę</div></div>
+      <div><div class="n">10</div><div class="t">Złoty<br>upominek</div></div>
+      <div><div class="n">20</div><div class="t">Wielki Rytuał<br>Elysium</div></div>
+    </div>
+    <div class="sign">Z miłością, zespół Elysium</div>
+  </div>
+  <div class="folio"><span>— 2 —</span></div>
+</div></section>
+
+<!-- 3–6 · TABELE (generowane) -->
+<div id="tables"></div>
+
+<!-- 7 · UPOMINKI -->
+<section class="page light gifts"><div class="trim">
+  <div class="edge"></div>
+  <div class="head"><div class="mini">ELYSIUM</div><h2>Twoje <em>upominki</em></h2><div class="rule"><span>✦</span></div></div>
+
+  <div class="card">
+    <div class="badge">10. wizyta</div>
+    <h3>Złoty Upominek</h3>
+    <p>Elegancko zapakowany kosmetyk premium w wersji mini, starannie dobrany do potrzeb Twojej skóry, abyś mogła przedłużyć efekt zabiegów w domu.</p>
+    <div class="stamp">
+      <div class="f"><i></i><small>Data odbioru</small></div>
+      <div class="f"><i></i><small>Podpis</small></div>
+      <div class="seal">Pieczęć</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="badge">20. wizyta</div>
+    <h3>Wielki Rytuał Elysium</h3>
+    <p>Luksusowe pudełko prezentowe z pełnowymiarowym kosmetykiem do pielęgnacji domowej oraz relaksującą sesją światłoterapii LED gratis przy kolejnym zabiegu.</p>
+    <div class="stamp">
+      <div class="f"><i></i><small>Data odbioru</small></div>
+      <div class="f"><i></i><small>Podpis</small></div>
+      <div class="seal">Pieczęć</div>
+    </div>
+  </div>
+
+  <div class="note">Upominek wydawany jest po okazaniu karty z kompletem wpisów.<br>Karta jest imienna i nie podlega wymianie na gotówkę.</div>
+  <div class="folio"><span>— 7 —</span></div>
+</div></section>
+
+<!-- 8 · TYŁ -->
+<section class="page dark back"><div class="trim">
+  <div class="frame"><span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span></div>
+  <div class="inner">
+    <div class="wordmark"><div class="name gold-text">ELYSIUM</div><div class="sub">CLINIC</div></div>
+    <div class="quote">„Piękno to rytuał,<br>nie przypadek.”</div>
+    <div class="lbl">Zapraszamy</div>
+    <div class="hours">Wtorek – Piątek · 9:00 – 19:00<br>Sobota · 10:00 – 15:00</div>
+    <div class="rule" style="margin-top:5mm"><span>✦</span></div>
+    <div class="contact">ul. ________________________<br>tel. ______________________<br>@elysium.clinic</div>
+  </div>
+</div></section>
+
+<script>
+  // 20 wierszy, po 5 na stronę; 10. i 20. wizyta = upominek
+  const host = document.getElementById('tables');
+  for (let p = 0; p < 4; p++) {
+    const from = p * 5 + 1, to = from + 4;
+    let rows = '';
+    for (let i = from; i <= to; i++) {
+      const gift = i === 10 || i === 20;
+      rows += `<tr class="${gift ? 'gift' : ''}">
+        <td><span class="num">${i}</span>${gift ? `<span class="giftlbl">✦ Upominek<small>${i === 10 ? 'Złoty' : 'Wielki Rytuał'}</small></span>` : ''}<span class="dateph">__ . __ . ____</span></td>
+        <td><div class="lines"></div></td>
+        <td><div class="lines"></div></td></tr>`;
+    }
+    const giftName = to === 10 ? 'Złoty Upominek' : to === 20 ? 'Wielki Rytuał Elysium' : '';
+    const band = giftName ? `<div class="gift-band">${to}. wizyta · <b>${giftName}</b> · czeka na Ciebie</div>` : '';
+    host.insertAdjacentHTML('beforebegin', `
+    <section class="page light"><div class="trim">
+      <div class="edge"></div>
+      <div class="head"><div class="mini">ELYSIUM</div><h2>Wizyty <em>${from} – ${to}</em></h2><div class="rule"><span>✦</span></div></div>
+      <table><colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
+        <thead><tr><th>Data</th><th>Nazwa zabiegu</th><th>Twoja opinia <span class="g">o zabiegu</span></th></tr></thead>
+        <tbody>${rows}</tbody></table>
+      <div class="folio"><span>— ${p + 3} —</span></div>
+    </div></section>`);
+  }
+  host.remove();
+  // delikatny złoty pył na ciemnych stronach
+  document.querySelectorAll('.dark .trim').forEach((t, k) => {
+    let s = 7 + k * 13;
+    const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    for (let i = 0; i < 26; i++) {
+      const d = document.createElement('i'); d.className = 'dust';
+      const z = .25 + r() * .6;
+      Object.assign(d.style, { left: r() * 100 + '%', top: r() * 100 + '%', width: z + 'mm', height: z + 'mm', opacity: .15 + r() * .45 });
+      t.prepend(d);
+    }
+  });
+</script>
+</body>
+</html>

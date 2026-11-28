@@ -48,8 +48,30 @@ def row(name, price, desc=None):
     return (f'<div class="item"><div class="row"><span class="name">{html.escape(name)}</span>'
             f'<span class="dots"></span><span class="price">{price}</span></div>{d}</div>')
 
-def page(title, body, vars):
-    css = CSS
+LIGHT = """
+body { background: #faf6ef; color: #2a211a; }
+.page { background: radial-gradient(ellipse 130mm 95mm at 50% 6%, #f3e9d8 0%, #faf6ef 70%); }
+.frame { border-color: #b08a4f; }
+.frame::after { border-color: rgba(176,138,79,.45); }
+.logo { mix-blend-mode: normal; }
+.title, h2 { color: #9a7337; }
+.orn { color: #b08a4f; }
+.name { color: #231b14; }
+.desc, .price small { color: #7a6d60; }
+.dots { border-bottom-color: rgba(154,115,55,.55); }
+.price { color: #8a6328; }
+.foot { color: #5e5246; }
+.foot b, .book .sub b { color: #8a6328; }
+.book { background: rgba(176,138,79,.08); border-color: rgba(176,138,79,.6); }
+.qr { padding: 0; border: .3mm solid rgba(176,138,79,.5); }
+.book .cta { color: #231b14; }
+.book .cta em { color: #9a7337; }
+.book .sub { color: #5e5246; }
+"""
+
+def page(title, body, vars, light=False):
+    css = CSS + (LIGHT if light else '')
+    if light: body = body.replace('src="logo.png"', 'src="logo_light.png"')
     for k, v in vars.items():
         css = css.replace(k, str(v))
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{title}</title>
@@ -87,6 +109,7 @@ s += ('<div class="book"><div class="qr"><img src="qr.jpg"></div><div>'
       f'<div class="sub">Full treatment menu &amp; available times on Fresha<br>{HOURS}<br>{ADDR}</div></div></div>')
 v1 = dict(PAD=12, LOGOW=88, TITLE=12, MBORN=3, H2=12, H2T=6, H2B=2.5, ROW=1.05, NAME=14, DESC=8.5, PRICE=13, COLS=1, FOOT=8.5)
 (D/'cennik_A4_QR.html').write_text(page('Elysium Price List', s, v1))
+(D/'cennik_A4_QR_jasny.html').write_text(page('Elysium Price List', s, v1, True))
 
 # ---------- Version 2: full menu, no QR ----------
 full = [
@@ -127,3 +150,4 @@ s += '</div>'
 s += f'<div class="foot"><b>{HOURS}</b><br>{ADDR}</div>'
 v2 = dict(PAD=10, LOGOW=70, TITLE=10.5, MBORN=2, H2=9.5, H2T=4.6, H2B=1.6, ROW=1.15, NAME=10.2, DESC=7, PRICE=9.8, COLS=2, FOOT=8.5)
 (D/'cennik_A4_pelny.html').write_text(page('Elysium Full Price List', s, v2))
+(D/'cennik_A4_pelny_jasny.html').write_text(page('Elysium Full Price List', s, v2, True))

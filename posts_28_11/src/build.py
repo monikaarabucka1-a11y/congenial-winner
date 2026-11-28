@@ -5,6 +5,7 @@ CSS = '''
 .H{font-family:'Playfair Display',serif;font-weight:800;line-height:1.02}
 .H em{font-style:italic;font-weight:600;color:#fbf3e6;-webkit-text-fill-color:#fbf3e6}
 .txt{font-size:30px;line-height:1.5;color:#efe6da}.txt b{color:#f6dcae}
+.c .txt{position:static;left:auto;right:auto;top:auto}
 .pairs{display:flex;gap:16px}
 .ph2{flex:1;position:relative;border-radius:22px;overflow:hidden;border:2px solid rgba(216,173,116,.8);box-shadow:0 16px 40px rgba(0,0,0,.5)}
 .ph2 img{width:100%;height:100%;object-fit:cover;display:block}
@@ -51,7 +52,7 @@ def rev(n, total, quotes):
                  f'<div class="fine2" style="margin-top:8px">{src}</div></div>')
     return post(n, total, f'<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">WHAT OUR CLIENTS SAY</div><div class="stars" style="margin-top:16px">★★★★★</div></div>'
                 f'<div style="position:absolute;left:80px;right:80px;top:240px;bottom:140px;display:flex;flex-direction:column;justify-content:center">{blocks}</div><div class="swipe">→</div>')
-T = 8
+T = 10
 P = {}
 P['p_1'] = post(1, T, '''<div style="position:absolute;top:150px;left:0;right:0;text-align:center"><div class="pill">BLACK FRIDAY · 2 DAYS LEFT</div>
 <div class="H goldtext ds" style="font-size:110px;margin-top:40px">Your skin,<br><em>our proof</em></div>
@@ -69,7 +70,7 @@ P['p_6'] = post(6, T, '''<div style="position:absolute;top:100px;left:0;right:0;
 P['p_7'] = post(7, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">HYDROGEN PURE GLOW</div><div class="H goldtext" style="font-size:72px;margin-top:12px">One treatment, <em>no filters</em></div></div>
 <div class="pairs" style="position:absolute;left:70px;right:70px;top:290px;height:720px"><div class="ph2"><img src="glow_b.jpg" style="object-position:center 40%"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="glow_a.jpg" style="object-position:center 40%"><div class="tag pill tg">AFTER</div></div></div>
 <div style="position:absolute;left:0;right:0;top:1040px;text-align:center"><div class="txt">Clearer pores · brighter, more even tone · instant glow</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
-P['p_8'] = post(8, T, '''<div style="position:absolute;top:120px;left:0;right:0;text-align:center"><div class="pill">YOUR TURN 🤍</div>
+P['p_10'] = post(10, T, '''<div style="position:absolute;top:120px;left:0;right:0;text-align:center"><div class="pill">YOUR TURN 🤍</div>
 <div class="H goldtext ds" style="font-size:96px;margin-top:34px">Ready for <em>your glow?</em></div></div>
 <div class="glass" style="position:absolute;left:110px;right:110px;top:520px;padding:40px 46px">
 <div style="display:flex;justify-content:space-between;font-size:30px;color:#fbf3e6;padding:12px 0;border-bottom:1px solid rgba(216,173,116,.25)"><b>RF Microneedling</b><span class="goldtext" style="font-family:'Playfair Display',serif;font-weight:800;font-size:44px">£110</span></div>
@@ -79,6 +80,12 @@ P['p_8'] = post(8, T, '''<div style="position:absolute;top:120px;left:0;right:0;
 <div style="position:absolute;left:0;right:0;top:960px;text-align:center"><div class="txt">Book by <b>Monday 30.11</b> · use until <b>31 January</b></div>
 <div class="pill" style="margin-top:30px;font-size:28px;padding:20px 50px">SEND “BF” TO BOOK</div></div>''', blurbg('gabinet.jpg', 'center', .3))
 
+P['p_8'] = post(8, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">REAL RESULTS</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Softer lines, <em>lifted contour</em></div></div>
+<div class="pairs" style="position:absolute;left:60px;right:60px;top:330px;height:560px"><div class="ph2"><img src="d_b.jpg"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="d_a.jpg"><div class="tag pill tg">AFTER</div></div></div>
+<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">Smoother nasolabial lines · firmer jawline · fresher tone</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
+P['p_9'] = post(9, T, '''<div style="position:absolute;top:100px;left:0;right:0;text-align:center"><div class="k">REAL RESULTS</div><div class="H goldtext" style="font-size:72px;margin-top:12px">Fresher, <em>firmer skin</em></div></div>
+<div class="pairs" style="position:absolute;left:60px;right:60px;top:330px;height:560px"><div class="ph2"><img src="e_b.jpg"><div class="tag pill tg">BEFORE</div></div><div class="ph2"><img src="e_a.jpg"><div class="tag pill tg">AFTER</div></div></div>
+<div style="position:absolute;left:0;right:0;top:930px;text-align:center"><div class="txt">More defined contour · even, radiant complexion</div><div class="fine2" style="margin-top:12px">Real client · shared with permission · results vary</div></div><div class="swipe">→</div>''')
 FB='Facebook recommendation'
 TR='Facebook recommendation · translated from Polish'
 P['p_2']=rev(2,T,[(REVIEW,'IZABELA B.',FB,48)])

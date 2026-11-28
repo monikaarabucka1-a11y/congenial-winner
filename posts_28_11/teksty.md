@@ -9,7 +9,7 @@ Słowa-klucze: **BF**, **VOUCHER**. Grafiki tylko po angielsku, w czarno-złotym
 
 ---
 
-## POST: karuzela `post_karuzela/slajd_1…8.png` (1080×1350), 10:00–11:00
+## POST: karuzela `post_karuzela/slajd_1…10.png` (1080×1350), 10:00–11:00
 1. „Your skin, our proof” ★★★★★ · 2 days left
 2. Izabela B. (EN)
 3. Sobia I.: premium hydrogen facial (EN)
@@ -17,7 +17,9 @@ Słowa-klucze: **BF**, **VOUCHER**. Grafiki tylko po angielsku, w czarno-złotym
 5. Kinga K. (RF mikroigłowy) + Sylwia W. (efekt po pierwszym zabiegu) (tłum. z PL)
 6. RF Microneedling: przed / zaraz po
 7. Hydrogen Pure Glow: przed / po
-8. „Ready for your glow?” Ceny BF · Send “BF”
+8. Real results: „Softer lines, lifted contour” (przed/po, kadr bez oczu)
+9. Real results: „Fresher, firmer skin” (przed/po, kadr bez oczu)
+10. „Ready for your glow?” Ceny BF · Send “BF”
 
 ### Opis (EN)
 Your skin, our proof ✨ Real words and real results from our clients 🤍 Swipe 👉
